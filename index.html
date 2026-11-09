@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="AK Survey">
+<meta name="theme-color" content="#04184a">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>عارض ملفات SDR</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.9.2/proj4.js"></script>
+<style>
+:root{--bg:#020f2b;--bg2:#041a42;--card:#08245a;--text:#eef3fb;--muted:#9db3d6;--line:#26498a;--silver:#cfd8e8;--accent:#2b8cff;--accent2:#6fb6ff;--ki:#ff6b5e;--grid:#0f3475;--panel:#06214f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden}
+body{display:flex;flex-direction:column;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;-webkit-tap-highlight-color:transparent}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:#0a2d68;z-index:60}
+.top{display:flex;align-items:center;gap:10px;padding:8px 12px;background:linear-gradient(180deg,#0a2d68,#041a42);border-bottom:1px solid var(--line);box-shadow:0 2px 16px rgba(43,140,255,.25)}
+#logo{width:40px;height:40px;border-radius:50%;filter:drop-shadow(0 0 6px rgba(43,140,255,.7))}
+.brand{line-height:1.15;direction:ltr;text-align:left;flex:1;min-width:0}
+.brand b{font-size:15px;white-space:nowrap;letter-spacing:.8px;color:#fff;font-weight:800}.brand b i{font-style:normal;color:var(--accent)}
+.brand small{display:block;overflow:hidden;text-overflow:ellipsis;font-size:8px;letter-spacing:1.4px;color:var(--silver);white-space:nowrap}
+#fchip{flex:none;display:flex;align-items:center;gap:6px;max-width:34vw;background:#031433;border:1px solid var(--line);border-radius:20px;padding:4px 10px;font-size:12px;color:var(--silver)}
+#fchip span#fn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 8px #34d399;flex:none}
+button,label.btn,select,input,textarea{font:inherit;font-size:13px;background:#031433;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:0 12px;min-height:38px}
+input,select,textarea{width:100%}
+button,label.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;background:linear-gradient(180deg,#0d3a82,#062150);border-color:#4a72b5;transition:transform .08s,box-shadow .15s;user-select:none}
+button:hover,label.btn:hover{box-shadow:0 0 0 1px var(--accent2) inset}
+button:active,label.btn:active{transform:scale(.97)}
+button.pri,label.btn.pri{background:linear-gradient(180deg,#3d9bff,#0b63e0);border-color:#9cc8ff;color:#fff;font-weight:700;box-shadow:0 2px 12px rgba(43,140,255,.45)}
+button.big{min-height:46px;font-size:15px;width:100%}
+button.on{border-color:var(--accent2);color:#fff;box-shadow:0 0 0 2px var(--accent) inset,0 0 10px rgba(43,140,255,.5);font-weight:700}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent2);box-shadow:0 0 0 3px rgba(43,140,255,.3)}
+input[type=file]{display:none}
+input[type=color]{padding:2px;width:44px;min-height:38px}
+input[type=range]{padding:0;accent-color:var(--accent);min-height:30px}
+input[type=checkbox]{width:auto;min-height:0;accent-color:var(--accent)}
+textarea{display:none}
+#info{unicode-bidi:plaintext;font-size:12.5px;color:var(--silver);padding:6px 12px;background:var(--panel);border-bottom:1px solid var(--line);line-height:1.45;max-height:4.4em;overflow:auto}
+#main{flex:1;display:flex;flex-direction:column;min-height:0}
+#stage{flex:1;position:relative;min-height:0}
+#wrap{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#0a2f6b 0%,#031a44 60%,#021233 100%)}
+canvas#cv{position:absolute;inset:0;width:100%;height:100%;touch-action:none;display:block}
+#empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;pointer-events:none}
+#empty .eb{pointer-events:auto;text-align:center;background:rgba(8,36,90,.75);border:1px solid var(--line);border-radius:18px;padding:26px 28px;max-width:340px;backdrop-filter:blur(6px);box-shadow:0 8px 40px rgba(0,0,0,.4)}
+#empty h2{margin:10px 0 4px;font-size:18px}#empty p{margin:0 0 16px;color:var(--muted);font-size:12.5px;line-height:1.7}
+#wrap.drag{outline:2px dashed var(--accent);outline-offset:-8px}
+#fab{position:absolute;right:10px;bottom:12px;display:flex;flex-direction:column;gap:8px;z-index:5}
+#fab button{width:42px;height:42px;min-height:0;padding:0;border-radius:50%;font-size:20px;background:rgba(6,33,79,.9);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+#side{display:flex;flex-direction:column}
+#sheet{max-height:48vh;overflow-y:auto;background:var(--bg2);border-top:1px solid var(--line);padding:10px 12px 14px;-webkit-overflow-scrolling:touch}
+body[data-tab=""] #sheet{display:none}
+#tabs{display:flex;background:#031433;border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+#tabs button{flex:1;flex-direction:column;gap:2px;min-height:54px;border:0;border-radius:0;background:transparent;box-shadow:none;color:var(--muted);font-size:11px;font-weight:600;border-top:3px solid transparent}
+#tabs button svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#tabs button.on{color:#fff;border-top-color:var(--accent);background:linear-gradient(180deg,rgba(43,140,255,.22),transparent);box-shadow:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
+.card h3{margin:0 0 10px;font-size:13px;color:var(--accent2);letter-spacing:.3px}
+.g2,.g3,.g4{display:grid;gap:8px;margin-top:8px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.g2:first-of-type,.g3:first-of-type{margin-top:0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.fld{display:flex;flex-direction:column;gap:4px;font-size:11.5px;color:var(--muted);margin-top:8px}
+.g2 .fld,.g3 .fld{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border:1px solid var(--line);border-radius:20px;background:#031433;font-size:12.5px;cursor:pointer;user-select:none}
+.chip:has(input:checked){border-color:var(--accent2);background:rgba(43,140,255,.25);color:#fff}
+.note{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.65}
+.sh{border-top:1px dashed #1b3f80;padding:8px 0}
+#ppv{width:100%;height:auto;margin-top:10px;border-radius:6px;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,.45)}
+#dlg,#dlg2{position:fixed;inset:0;background:rgba(2,10,30,.85);z-index:70;display:flex;align-items:center;justify-content:center;padding:12px}
+#dlg[hidden],#dlg2[hidden]{display:none}
+#dlg .card,#dlg2 .card{max-width:560px;width:100%;max-height:92vh;overflow:auto;margin:0;box-shadow:0 0 30px rgba(43,140,255,.5)}
+pre#pv{direction:ltr;text-align:left;background:#031433;border:1px solid var(--line);border-radius:8px;padding:8px;font-size:12px;overflow-x:auto;margin:8px 0;max-height:130px}
+@media (min-width:900px){
+ #main{flex-direction:row}
+ #side{order:-1;width:410px;flex-direction:column-reverse;border-left:1px solid var(--line);background:var(--bg2)}
+ #sheet{max-height:none;flex:1;border-top:0}
+ body[data-tab=""] #sheet{display:block}
+ #tabs{border-top:0;border-bottom:1px solid var(--line)}
+ #tabs button{border-top:0;border-bottom:3px solid transparent}
+ #tabs button.on{border-bottom-color:var(--accent)}
+ #fchip{max-width:260px}
+}
+#xy{position:absolute;left:10px;bottom:12px;direction:ltr;font:11px/1.3 ui-monospace,Consolas,monospace;background:rgba(0,0,0,.6);color:#cfe3ff;padding:3px 8px;border-radius:6px;pointer-events:none;z-index:4}
+#tb{width:100%;border-collapse:collapse;direction:ltr;font-size:12px}#tb td,#tb th{border:1px solid var(--line);padding:2px 4px;text-align:center}#tb th{background:#0d3a82}
+#tb input{min-height:26px;padding:0 4px;font-size:12px;border-radius:4px;min-width:64px}#tb button{min-height:26px;padding:0 8px}#tb td[data-z]{cursor:pointer;color:var(--accent2)}
+</style>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#04184a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SDR Viewer">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+</head>
+<body>
+<header class="top">
+  <img id="logo" alt="logo">
+  <div class="brand"><b>AHMED <i>KHALID</i></b><small>SURVEY &amp; TECHNICAL OFFICE</small></div>
+  <div id="fchip"><i class="dot"></i><span id="fn">لا يوجد ملف</span></div>
+  <label class="btn pri">فتح ملف<input type="file" id="file"></label>
+</header>
+<div id="info">ارفع ملف SDR أو TXT أو DXF للبدء</div>
+<div id="main">
+ <div id="stage">
+  <div id="wrap">
+   <canvas id="cv"></canvas><div id="xy">E — N —</div>
+   <div id="empty"><div class="eb">
+    <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#6fb6ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    <h2>ابدأ بفتح ملف</h2><p>SDR · TXT · CSV · DXF<br>تقدر تسحب الملف وتسيبه هنا</p>
+    <button class="pri big" id="ebtn">اختيار ملف</button></div></div>
+  </div>
+  <div id="fab"><button id="zi" aria-label="تكبير">+</button><button id="zo" aria-label="تصغير">−</button><button id="fit" aria-label="ضبط العرض">⤢</button></div>
+ </div>
+ <aside id="side">
+  <div id="sheet">
+   <section class="pane" data-t="file">
+    <div class="card"><h3>الملف</h3>
+     <button class="pri big" id="fopen">اختيار ملف</button>
+     <div class="chips"><span class="chip">SDR</span><span class="chip">TXT / CSV</span><span class="chip">DXF</span></div>
+     <div class="note">ملفات DWG لازم تتحول DXF الأول (SAVEAS في AutoCAD أو ODA File Converter).</div>
+     <div class="chips"><label class="chip"><input type="checkbox" id="sdrsw" checked>عكس E/N عند فتح SDR</label></div><div class="row"><button id="swp">تبديل E↔N للملف الحالي</button></div><div class="row"><button id="rfmt">تغيير فورمات ملف TXT الحالي</button></div>
+    </div>
+    <div class="card"><h3>بحث وملخص</h3>
+     <div class="row" style="margin-top:0"><input id="fq" placeholder="رقم النقطة" style="flex:1"><button id="fnd" class="pri">اذهب</button></div>
+     <div class="row"><button id="sum">ملخص الملف</button></div>
+     <div id="sumr" class="note" style="white-space:pre-line"></div>
+    </div>
+   </section>
+   <section class="pane" data-t="draw" hidden>
+    <div class="card"><h3>التوصيل والقياس</h3>
+     <div class="g2" style="margin-top:0"><button id="manual">توصيل يدوي</button><button id="meas">قياس بين نقطتين</button></div>
+     <div class="g3"><button id="finish">إنهاء الخط</button><button id="close">إغلاق الخط</button><button id="undo">تراجع</button></div>
+     <div class="g2"><button id="hull" class="pri">حدود تلقائية</button><button id="order">وصل بترتيب الملف</button></div>
+     <div class="row"><button id="clear">مسح كل الخطوط</button><label class="fld" style="margin:0;flex-direction:row;align-items:center;gap:8px">لون الخطوط <input type="color" id="lc" value="#7fd4ff"></label></div>
+     <div class="note">في التوصيل اليدوي اضغط النقاط بالترتيب. الحدود التلقائية = أصغر محيط محدب يضم كل نقاط الرفع.</div>
+    </div>
+    <div class="card"><h3>الأشكال</h3><div id="shl"></div></div>
+   </section>
+   <section class="pane" data-t="view" hidden>
+    <div class="card"><h3>شكل النقاط</h3>
+     <div class="g2" style="margin-top:0"><label class="fld">الشكل<select id="shape"><option value="circle">دائرة</option><option value="square">مربع</option><option value="diamond">معين</option><option value="triangle">مثلث</option><option value="cross">علامة +</option><option value="x">علامة ×</option><option value="circp">دائرة + (Civil)</option><option value="circx">دائرة × </option><option value="circdot">دائرة بنقطة</option><option value="sqx">مربع ×</option><option value="sqdot">مربع بنقطة</option><option value="tridown">مثلث مقلوب</option><option value="hex">سداسي</option><option value="star">نجمة</option><option value="dot">نقطة صغيرة</option></select></label>
+     <label class="fld">اللون<input type="color" id="pc" value="#4da3ff" style="width:100%"></label></div>
+     <label class="fld">الحجم<input type="range" id="size" min="2" max="20" value="5"></label><div class="chips"><label class="chip"><input type="checkbox" id="pfill" checked>تعبئة الشكل</label></div><label class="fld">خلفية الشاشة<select id="bg"><option value="c3d">Civil 3D (رمادي غامق)</option><option value="cad">AutoCAD (أسود)</option><option value="gray">رمادي كلاسيك</option><option value="navy">أزرق</option><option value="white">أبيض (ورقة)</option></select></label>
+    </div>
+    <div class="card"><h3>الكتابات جنب النقاط</h3>
+     <div class="chips" style="margin-top:0"><label class="chip"><input type="checkbox" id="lName" checked>الاسم</label><label class="chip"><input type="checkbox" id="lZ">المنسوب</label><label class="chip"><input type="checkbox" id="lCode">الكود</label><label class="chip"><input type="checkbox" id="lN">N</label><label class="chip"><input type="checkbox" id="lE">E</label></div>
+     <label class="fld">حجم الخط<input type="range" id="fs" min="8" max="22" value="11"></label>
+    </div>
+    <div class="card"><h3>الكروس والسناب</h3><label class="fld" style="margin-top:0">حجم الكروس % (100 = كل الشاشة زي الأوتوكاد)<input type="range" id="cxs" min="3" max="100" value="100"></label><div class="chips"><label class="chip"><input type="checkbox" id="snp" checked>سناب على النقاط</label></div></div>
+    <div class="card"><h3>عناصر العرض</h3>
+     <div class="chips" style="margin-top:0"><label class="chip"><input type="checkbox" id="oGrid" checked>الشبكة</label><label class="chip"><input type="checkbox" id="oScale" checked>مقياس وسهم الشمال</label><label class="chip"><input type="checkbox" id="oLen">أطوال الأضلاع</label><label class="chip"><input type="checkbox" id="oArea">مساحة الأشكال</label></div>
+    </div>
+    <div class="card"><h3>نظام الإحداثيات والخريطة</h3>
+     <label class="fld" style="margin-top:0">النظام<select id="crs"></select></label>
+     <div class="g3"><label class="fld">Ellipsoid<select id="cE"><option>helmert</option><option>WGS84</option><option>GRS80</option><option>intl</option><option>clrk80</option></select></label><label class="fld">Lat0<input id="cB0" type="number" step="any"></label><label class="fld">CM<input id="cL0" type="number" step="any"></label></div>
+     <div class="g3"><label class="fld">k<input id="cK" type="number" step="any"></label><label class="fld">FE<input id="cX0" type="number" step="any"></label><label class="fld">FN<input id="cY0" type="number" step="any"></label></div>
+     <div class="g3"><label class="fld">ΔX<input id="cDX" type="number" step="any"></label><label class="fld">ΔY<input id="cDY" type="number" step="any"></label><label class="fld">ΔZ<input id="cDZ" type="number" step="any"></label></div>
+     <div class="note">اختار النظام وعدّل أي بارامتر. لو عندك نظام تاني في Civil 3D انقل بارامتراته (MAPCSASSIGN).</div>
+     <div class="g2"><button id="bm" class="pri">الخريطة: إيقاف</button><button id="gmap">Google Maps</button></div>
+     <div class="g2"><button id="geo">Lat/Lon</button><button id="csvll">CSV بالـ Lat/Lon</button></div>
+     <div class="note">صور الخريطة بتتحمل في الملف المستقل بإنترنت، وجوه صفحة Claude بتتحجب.</div>
+     <label class="fld">النقطة الحقيقية (Lat, Lon) لضبط الإزاحة<input id="tll" dir="ltr" placeholder="31.2001, 29.9187"></label>
+     <div class="g2"><button id="cal">ضبط على النقطة المختارة</button><button id="calx">إلغاء الضبط</button></div>
+    </div>
+   </section>
+   <section class="pane" data-t="edit" hidden>
+    <div class="card"><h3>أدوات التعديل</h3>
+     <div class="g3" style="margin-top:0"><button data-m="move">تحريك نقطة</button><button data-m="add">إضافة نقطة</button><button data-m="del">حذف نقطة</button></div>
+     <div class="g3"><button id="eline">إضافة خط</button><button data-m="seg">حذف ضلع</button><button data-m="tri">حذف مثلث</button></div>
+     <div class="g3"><label class="fld">اسم النقطة<input id="nn" placeholder="تلقائي"></label><label class="fld">Z<input id="nz" type="number" step="any" placeholder="من السطح"></label><label class="fld">كود<input id="ncd"></label></div>
+     <div class="row"><button id="eundo">تراجع عن آخر تعديل</button></div>
+     <div class="note">إضافة نقطة: اضغط مكان فاضي (المنسوب من السطح لو موجود). حذف ضلع: اضغط نقطتين متجاورتين على الخط. حذف مثلث: لتنظيف حواف السطح بعد إنشاء TIN.</div></div>
+    <div class="card"><h3>النقطة المختارة</h3>
+     <div class="g2" style="margin-top:0"><label class="fld">الاسم<input id="edn"></label><label class="fld">الكود<input id="edc"></label></div>
+     <div class="g3"><label class="fld">E<input id="ede" type="number" step="any"></label><label class="fld">N<input id="edN" type="number" step="any"></label><label class="fld">Z<input id="edz" type="number" step="any"></label></div>
+     <div class="g2"><button id="eapp" class="pri">تطبيق</button><button id="edel">حذف النقطة</button></div></div>
+    <div class="card"><h3>أدوات مساعدة</h3>
+     <div class="g2" style="margin-top:0"><button id="dup">فحص النقاط المكررة</button><button id="codes">ملخص الأكواد</button></div>
+     <div class="g2"><label class="fld">ترقيم من رقم<input id="rn0" type="number" value="1"></label><button id="rnm" style="align-self:end">إعادة ترقيم النقاط</button></div>
+     <div class="g3"><label class="fld">ΔE<input id="sE" type="number" step="any" value="0"></label><label class="fld">ΔN<input id="sN" type="number" step="any" value="0"></label><label class="fld">ΔZ<input id="sZ" type="number" step="any" value="0"></label></div>
+     <div class="g2"><button id="shf">إزاحة كل النقاط</button><button id="cpy">نسخ إحداثيات المختارة</button></div>
+     <div class="row"><input id="goto" dir="ltr" placeholder="E, N للذهاب لإحداثي" style="flex:1"><button id="go">اذهب</button></div>
+     <div class="note">اختصارات: Esc إلغاء الأداة | Delete حذف المختارة | Ctrl+Z تراجع | F ضبط العرض</div></div>
+    <div class="card"><h3>الجداول</h3><div class="g2" style="margin-top:0"><button id="ptb" class="pri">جدول النقاط (تعديل)</button><button id="hl">أعلى / أقل نقاط</button></div></div>
+   </section>
+   <section class="pane" data-t="calc" hidden>
+    <div class="card"><h3>المساحات والتقرير</h3>
+     <label class="fld" style="margin-top:0">عنوان التقرير<input id="rt" placeholder="اسم المشروع"></label>
+     <div class="g2"><button id="rpdf" class="pri">تقرير PDF</button><button id="rcsv">تقرير CSV</button></div>
+     <div class="note">المساحة بالمتر والفدان/قيراط/سهم والهكتار، مع المحيط وجدول الإحداثيات والأضلاع. ارسم الشكل من تبويب "رسم".</div>
+    </div>
+    <div class="card"><h3>السطح والكنتور والكميات</h3>
+     <div class="g3" style="margin-top:0"><button id="tinb" class="pri">إنشاء TIN</button><button id="tinv">إظهار/إخفاء</button><button id="shd">تلوين</button></div>
+     <div class="g3"><label class="fld">أقصى ضلع (م)<input id="maxe" type="number" value="0" min="0"></label><label class="fld">فاصل كنتور<input id="ci" type="number" value="0.25" step="0.05" min="0.01"></label><button id="cnt" style="align-self:end">كنتور</button></div>
+     <div class="g2"><label class="fld">منسوب المقارنة<input id="ref" type="number" step="any"></label><button id="vol" style="align-self:end">حفر / ردم</button></div>
+     <div id="rep" class="note" style="white-space:pre-line"></div>
+    </div>
+    <div class="card"><h3>تحليلات السطح والجداول</h3>
+     <label class="fld" style="margin-top:0">فاصل الباند / المنسوب (م)<input id="bs" type="number" value="0.5" step="0.05" min="0.01"></label>
+     <div class="g3"><button id="bnd" class="pri">باندات الارتفاع</button><button id="slp">تحليل الميول</button><button id="vtab">حفر/ردم متعدد</button></div>
+     <div class="note">كل جدول بيتفتح في نافذة ومعاه تصدير CSV. محتاج TIN.</div></div>
+   </section>
+   <section class="pane" data-t="print" hidden>
+    <div class="card"><h3>شيت الطباعة (PDF)</h3>
+     <div class="g2" style="margin-top:0"><label class="fld">اسم الطبقة<input id="pl" placeholder="CUT"></label><label class="fld">اسم القطاع<input id="ps" placeholder="P17"></label></div>
+     <div class="g2"><label class="fld">تاريخ الطباعة<input id="pd" type="date"></label><label class="fld">صفوف / صفحة (حتى 44)<input id="prr" type="number" value="40" min="5" max="44"></label></div>
+     <label class="fld">عنوان الشيت<input id="ptl" value="SURVEY SHEET"></label>
+     <div class="g3"><label class="fld">حجم الورق<select id="pp"><option>A4</option><option>A3</option><option>A2</option><option>A5</option><option>Letter</option><option>Legal</option></select></label><label class="fld">الجودة DPI<select id="pq"><option value="200">200</option><option value="300" selected>300</option><option value="400">400</option><option value="600">600</option></select></label><label class="fld">الصفحات<select id="prg"><option value="all">كلها</option><option value="cur">المعروضة</option></select></label></div><div class="chips"><label class="chip"><input type="checkbox" id="pe" checked>تعبئة الصفوف الفارغة</label><label class="chip"><input type="checkbox" id="pk">تضمين المحطات</label><label class="chip"><input type="checkbox" id="pland">عرضي</label><label class="chip"><input type="checkbox" id="pf">اسم المكتب في الفوتر</label></div>
+     <div class="row" style="margin-top:0"><button id="pprev">◀ السابقة</button><button id="pnext">التالية ▶</button><label class="fld" style="flex:1;margin:0">تكبير المعاينة<input type="range" id="pz" min="50" max="250" value="100"></label></div><div style="overflow:auto"><canvas id="ppv"></canvas></div><div class="note" id="ppn"></div>
+     <button id="ppdf" class="pri big" style="margin-top:8px">تصدير PDF للطباعة</button>
+    </div>
+    <div class="card"><h3>تصدير ملفات</h3>
+     <div class="g3" style="margin-top:0"><button data-x="csv">CSV</button><button data-x="txt">TXT</button><button data-x="geojson">GeoJSON</button></div>
+     <div class="g3"><button data-x="dxfzip" class="pri">DXF (ZIP)</button><button data-x="dxf">DXF (txt)</button><button data-x="kmz" class="pri">KMZ</button></div>
+     <div class="g3"><button data-x="png">PNG</button><button data-x="jpg">JPG</button><button data-x="pdf">PDF خريطة</button></div>
+     <label class="fld">ارتفاع نص DXF<input id="th" type="number" value="0.5" step="0.1" min="0.05"></label>
+     <div class="note">الصفحة بتحفظ txt/csv/json/zip/pdf/png/jpg بس: <b>DXF (ZIP)</b> فك الضغط تلاقي .dxf، و<b>KMZ</b> بيتحفظ …_kmz.zip وغيّر امتداده لـ .kmz. في الـ DXF: رقم النقطة (PT_NO) ومنسوبها (PT_ELEV).</div>
+    </div>
+   </section>
+  </div>
+  <nav id="tabs"><button data-t="file"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>الملف</button><button data-t="draw"><svg viewBox="0 0 24 24"><path d="M4 18l5-9 4 5 3-6 4 10"/><circle cx="4" cy="18" r="1.4"/><circle cx="9" cy="9" r="1.4"/><circle cx="13" cy="14" r="1.4"/><circle cx="20" cy="18" r="1.4"/></svg>رسم</button><button data-t="view"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>عرض</button><button data-t="edit"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg>تعديل</button><button data-t="calc"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 20v-9M12 20V4M18 20v-6"/></svg>تحليل</button><button data-t="print"><svg viewBox="0 0 24 24"><path d="M7 9V3h10v6M7 18H5a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><rect x="7" y="14" width="10" height="7"/></svg>طباعة</button></nav>
+ </aside>
+</div>
+<div id="dlg" hidden><div class="card">
+ <b id="dt">فورمات الملف</b>
+ <div class="note">ده ملف نصي. اختار ترتيب الأعمدة (P=رقم، N=شمال، E=شرق، Z=منسوب، D=كود) وراجع أول نقطة قبل الفتح.</div>
+ <pre id="pv"></pre>
+ <div class="row">ترتيب الأعمدة <select id="ord">
+  <option value="PENZD">PENZD – رقم، E، N، Z، كود</option><option value="PNEZD">PNEZD – رقم، N، E، Z، كود</option>
+  <option value="PENZ">PENZ – رقم، E، N، Z</option><option value="PNEZ">PNEZ – رقم، N، E، Z</option>
+  <option value="ENZ">ENZ – E، N، Z</option><option value="NEZ">NEZ – N، E، Z</option>
+  <option value="EN">EN – E، N</option><option value="NE">NE – N، E</option><option value="CUSTOM">مخصص…</option></select>
+  <input id="ordc" dir="ltr" placeholder="PENZD" style="width:90px;display:none"></div>
+ <div class="note" id="cn" style="display:none">المخصص: اكتب الحروف بالترتيب (P N E Z D)، و - لتخطي عمود، X=E وY=N.</div>
+ <div class="row">الفاصل <select id="dl"><option value="auto">تلقائي</option><option value=",">فاصلة ,</option><option value=" ">مسافة</option><option value="tab">Tab</option><option value=";">فاصلة منقوطة ;</option></select> تخطي أول <input id="sk" type="number" value="0" min="0"> سطر</div>
+ <div id="pr" class="note"></div>
+ <div class="row"><button id="dok" class="pri">فتح</button><button id="dno">إلغاء</button></div>
+</div></div>
+<div id="dlg2" hidden><div class="card"><b id="t2"></b><div id="b2" style="overflow:auto;max-height:62vh;margin-top:8px"></div><div class="row"><button id="c2" class="pri">تصدير CSV</button><button id="x2">إغلاق</button></div></div></div>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  var cv=$('cv'),ctx=cv.getContext('2d'),wrap=$('wrap'),info=$('info'),empty=$('empty');
+  var pts=[],lines=[],cur=null,manual=false,sel=null,fname='points',view={cx:0,cy:0,s:1},dpr=window.devicePixelRatio||1,TH={grid:'#2c3541',mut:'#8d9aab',ink:'#e6edf5',sb:'#1f2630'};
+  function css(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+
+  function parseSDR(t){
+    var out=[];
+    t.split(/\r?\n/).forEach(function(l){
+      if(l.slice(0,2)!=='08')return;
+      var type=l.substr(2,2),name=l.substr(4,16).trim(),n=parseFloat(l.substr(20,16)),e=parseFloat(l.substr(36,16)),z=parseFloat(l.substr(52,16)),code=l.substr(68,16).trim();
+      if(isNaN(n)||isNaN(e)){
+        var m=l.slice(4).trim().match(/^(\S+?)(-?\d+\.\d+)\s+(-?\d+\.\d+)\s+(-?\d+\.\d+)?\s*(.*)$/);
+        if(!m)return;name=m[1];n=+m[2];e=+m[3];z=m[4]?+m[4]:NaN;code=m[5]||'';
+      }
+      out.push({type:type,name:name,n:n,e:e,z:z,code:code});
+    });
+    return out;
+  }
+  function resize(){var r=wrap.getBoundingClientRect();cv.width=Math.round(r.width*dpr);cv.height=Math.round(r.height*dpr);draw()}
+  function fit(){
+    if(!pts.length)return;
+    var a=1/0,b=-1/0,c=1/0,d=-1/0;
+    pts.forEach(function(p){a=Math.min(a,p.e);b=Math.max(b,p.e);c=Math.min(c,p.n);d=Math.max(d,p.n)});
+    var w=cv.width/dpr,h=cv.height/dpr;
+    view.s=Math.min((w-80)/Math.max(b-a,1),(h-80)/Math.max(d-c,1));view.cx=(a+b)/2;view.cy=(c+d)/2;draw();
+  }
+  function toScr(p){return [cv.width/dpr/2+(p.e-view.cx)*view.s,cv.height/dpr/2-(p.n-view.cy)*view.s]}
+  function shape(s,x,y,r){
+    ctx.beginPath();var Q=r*1.3;
+    function C(k){ctx.moveTo(x+k,y);ctx.arc(x,y,k,0,7)}
+    function P(){ctx.moveTo(x-Q,y);ctx.lineTo(x+Q,y);ctx.moveTo(x,y-Q);ctx.lineTo(x,y+Q)}
+    function X(k){ctx.moveTo(x-k,y-k);ctx.lineTo(x+k,y+k);ctx.moveTo(x+k,y-k);ctx.lineTo(x-k,y+k)}
+    function G(n,k,a0,in2){for(var i=0;i<n;i++){var a=a0+i*2*Math.PI/n,q=in2&&i%2?k*in2:k;i?ctx.lineTo(x+q*Math.cos(a),y+q*Math.sin(a)):ctx.moveTo(x+q*Math.cos(a),y+q*Math.sin(a))}ctx.closePath()}
+    if(s==='circle')ctx.arc(x,y,r,0,7);
+    else if(s==='square')ctx.rect(x-r,y-r,2*r,2*r);
+    else if(s==='diamond')G(4,Q,-Math.PI/2);
+    else if(s==='triangle')G(3,Q,-Math.PI/2);
+    else if(s==='tridown')G(3,Q,Math.PI/2);
+    else if(s==='hex')G(6,Q,0);
+    else if(s==='star')G(10,Q*1.2,-Math.PI/2,.45);
+    else if(s==='x')X(r);
+    else if(s==='circp'){C(r);P()}
+    else if(s==='circx'){C(r);X(r*.72)}
+    else if(s==='sqx'){ctx.rect(x-r,y-r,2*r,2*r);X(r)}
+    else if(s==='circdot'){C(r);C(Math.max(1,r*.28))}
+    else if(s==='sqdot'){ctx.rect(x-r,y-r,2*r,2*r);C(Math.max(1,r*.28))}
+    else if(s==='dot')ctx.arc(x,y,Math.max(1.3,r*.45),0,7);
+    else P();
+  }
+  function label(p){
+    var a=[];
+    if($('lName').checked)a.push(p.name);
+    if($('lZ').checked&&!isNaN(p.z))a.push(p.z.toFixed(3));
+    if($('lCode').checked&&p.code)a.push(p.code);
+    if($('lN').checked)a.push('N'+p.n.toFixed(2));
+    if($('lE').checked)a.push('E'+p.e.toFixed(2));
+    return a.join(' | ');
+  }
+  function draw(){
+    var w=cv.width/dpr,h=cv.height/dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+    if(!pts.length)return;
+    drawBase(w,h);
+    var target=80/view.s,step=Math.pow(10,Math.floor(Math.log10(target)));
+    [1,2,5,10].some(function(k){if(step*k>=target){step*=k;return true}});
+    var e0=view.cx-w/2/view.s,e1=view.cx+w/2/view.s,n0=view.cy-h/2/view.s,n1=view.cy+h/2/view.s,e,n,x,y;
+    ctx.strokeStyle=$('oGrid').checked?TH.grid:'rgba(0,0,0,0)';ctx.fillStyle=TH.mut;ctx.lineWidth=1;ctx.font='10px system-ui';ctx.textAlign='left';ctx.beginPath();
+    for(e=Math.ceil(e0/step)*step;e<=e1;e+=step){x=w/2+(e-view.cx)*view.s;ctx.moveTo(x,0);ctx.lineTo(x,h)}
+    for(n=Math.ceil(n0/step)*step;n<=n1;n+=step){y=h/2-(n-view.cy)*view.s;ctx.moveTo(0,y);ctx.lineTo(w,y)}
+    ctx.stroke();
+    for(e=Math.ceil(e0/step)*step;e<=e1;e+=step)ctx.fillText(e.toFixed(step<1?1:0),w/2+(e-view.cx)*view.s+2,h-4);
+    for(n=Math.ceil(n0/step)*step;n<=n1;n+=step)ctx.fillText(n.toFixed(step<1?1:0),2,h/2-(n-view.cy)*view.s-2);
+    if(tin&&showTin){var pp=tin.P;
+      tin.T.forEach(function(t){var a=toScr(pp[t[0]]),b=toScr(pp[t[1]]),c=toScr(pp[t[2]]);
+        ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.lineTo(c[0],c[1]);ctx.closePath();
+        if(shade){var z=(pp[t[0]].z+pp[t[1]].z+pp[t[2]].z)/3;ctx.fillStyle='hsla('+(240-240*(z-tin.zmin)/(tin.dz||1))+',80%,50%,.55)';ctx.fill()}
+        ctx.strokeStyle='rgba(180,210,255,.35)';ctx.lineWidth=.8;ctx.stroke()});
+    }
+    if(tin&&showCnt)drawCont();
+    ctx.strokeStyle=$('lc').value;
+    lines.forEach(function(L){
+      ctx.lineWidth=L===cur?3:1.8;ctx.beginPath();
+      lpts(L).forEach(function(q,k){var s=toScr(q);k?ctx.lineTo(s[0],s[1]):ctx.moveTo(s[0],s[1])});
+      if(L.closed)ctx.closePath();ctx.stroke();
+    });
+    var sh=$('shape').value,sz=+$('size').value,pc=$('pc').value;
+    ctx.font=$('fs').value+'px system-ui';
+    pts.forEach(function(p,i){
+      var s=toScr(p);if(s[0]<-30||s[0]>w+30||s[1]<-30||s[1]>h+30)return;
+      var ki=p.type==='KI',col=ki?css('--ki'):pc;
+      ctx.fillStyle=col;ctx.strokeStyle=col;ctx.lineWidth=2;
+      shape(ki?'triangle':sh,s[0],s[1],ki?sz+3:sz);
+      var LS=/^(cross|x|circp|circx|sqx|circdot|sqdot)$/.test(sh);if(ki||($('pfill').checked&&!LS))ctx.fill();ctx.stroke();
+      if(p===sel){ctx.strokeStyle=TH.ink;ctx.lineWidth=2;shape('circle',s[0],s[1],sz+5);ctx.stroke()}
+      var t=label(p);if(p===sel&&!t)t=p.name;
+      if(t){ctx.fillStyle=TH.ink;ctx.fillText(t,s[0]+sz+3,s[1]-sz-1)}
+    });
+    drawOver(w,h);
+  }
+  function load(t,name){
+    raw={t:t,name:name};hist=[];var R=parseAny(t,name);pts=R.pts;lines=R.lines;tin=null;cur=null;sel=null;fname=name.replace(/\.[^.]+$/,'')||'points';$('rt').value=fname;
+    empty.style.display=pts.length?'none':'flex';
+    if(!pts.length){info.textContent=R.msg||'ما لقيتش نقاط في الملف';draw();return}
+    var k=pts.filter(function(p){return p.type==='KI'}).length;
+    var es=pts.map(function(p){return p.e}),ns=pts.map(function(p){return p.n}),ex=Math.max(Math.max.apply(0,es)-Math.min.apply(0,es),Math.max.apply(0,ns)-Math.min.apply(0,ns));$('th').value=Math.max(0.1,+(ex/150).toFixed(1));
+    info.textContent=name+' — '+pts.length+' نقطة ('+k+' محطة، '+(pts.length-k)+' رفع)';$('fn').textContent=name;fit();if(window.innerWidth<900)setTab('');
+  }
+  function readFile(f){if(!f)return;var r=new FileReader();r.onload=function(){try{if(isTxt(r.result,f.name))showDlg(r.result,f.name);else load(r.result,f.name)}catch(e){info.textContent='خطأ في قراءة الملف: '+(e&&e.message)}};r.readAsText(f)}
+  $('file').addEventListener('change',function(e){readFile(e.target.files[0])});
+  ['dragenter','dragover'].forEach(function(t){wrap.addEventListener(t,function(e){e.preventDefault();wrap.classList.add('drag')})});
+  ['dragleave','drop'].forEach(function(t){wrap.addEventListener(t,function(e){e.preventDefault();wrap.classList.remove('drag')})});
+  wrap.addEventListener('drop',function(e){readFile(e.dataTransfer.files[0])});
+
+  // ---- lines ----
+  function hull(){
+    var P=[];pts.forEach(function(p,i){if(p.type!=='KI')P.push({i:i,e:p.e,n:p.n})});
+    if(P.length<3)return [];
+    P.sort(function(a,b){return a.e-b.e||a.n-b.n});
+    function cr(o,a,b){return (a.e-o.e)*(b.n-o.n)-(a.n-o.n)*(b.e-o.e)}
+    var lo=[],up=[];
+    P.forEach(function(p){while(lo.length>1&&cr(lo[lo.length-2],lo[lo.length-1],p)<=0)lo.pop();lo.push(p)});
+    P.slice().reverse().forEach(function(p){while(up.length>1&&cr(up[up.length-2],up[up.length-1],p)<=0)up.pop();up.push(p)});
+    lo.pop();up.pop();return lo.concat(up).map(function(p){return p.i});
+  }
+  $('manual').onclick=function(){setMode('');manual=!manual;this.classList.toggle('on',manual);if(!manual)cur=null;draw()};
+  $('finish').onclick=function(){cur=null;draw()};
+  $('close').onclick=function(){var L=cur;if(L&&L.ids.length>2){L.closed=true;info.textContent='خط مغلق: '+meas(L)}cur=null;draw()};
+  $('undo').onclick=function(){
+    var L=cur||lines[lines.length-1];if(!L)return;
+    if(L.closed)L.closed=false;else L.ids.pop();
+    if(!L.ids.length){lines.splice(lines.indexOf(L),1);if(cur===L)cur=null}draw();
+  };
+  $('clear').onclick=function(){lines=[];cur=null;draw()};
+  $('hull').onclick=function(){
+    var h=hull();if(!h.length)return;
+    lines=lines.filter(function(L){return !L.auto});lines.push({ids:h,closed:true,auto:true});info.textContent='الحدود التلقائية: '+meas(lines[lines.length-1]);draw();
+  };
+  $('order').onclick=function(){
+    var ids=[];pts.forEach(function(p,i){if(p.type!=='KI')ids.push(i)});
+    if(ids.length>1){lines.push({ids:ids,closed:false});draw()}
+  };
+  ['lc','shape','size','pc','fs','lName','lZ','lCode','lN','lE'].forEach(function(i){$(i).addEventListener('input',draw)});
+
+  // ---- export ----
+  function save(name,data){
+    if(!pts.length){info.textContent='ارفع ملف الأول';return}
+    function dl(){
+      var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([data]));a.download=name.replace(/_dxf\.txt$/,'.dxf').replace(/_kmz\.zip$/,'.kmz');
+      document.body.appendChild(a);a.click();a.remove();
+    }
+    var p=(window.claude&&claude.use)?claude.use('downloads'):Promise.resolve(null);
+    p.then(function(d){
+      if(!d)return dl();
+      return d.save({filename:name,data:data}).catch(function(e){info.textContent='ما اتحفظش: '+(e&&e.code||'')});
+    }).catch(function(){dl()});
+  }
+  function f(v,k){return isNaN(v)?'':v.toFixed(k)}
+  var dE=0,dN=0,raw=null,tin=null,showTin=true,shade=false,showCnt=false,tiles={},bm=0;
+  var PR=[['مصر – Red Belt (Egypt 1907)','helmert',30,31,1,615000,810000,-130,110,-13],
+   ['مصر – Blue Belt (Egypt 1907)','helmert',30,27,1,700000,200000,-130,110,-13],
+   ['مصر – Purple Belt (Egypt 1907)','helmert',30,35,1,300000,1100000,-130,110,-13],
+   ['مصر – Red Belt بدون إزاحة Datum','helmert',30,31,1,615000,810000,0,0,0],
+   ['مصر – Red Belt (WGS84 بدون إزاحة)','WGS84',30,31,1,615000,810000,0,0,0]];
+  for(var z=34;z<=38;z++)PR.push(['UTM zone '+z+'N (WGS84)','WGS84',0,6*z-183,0.9996,500000,0,0,0,0]);
+  var cs=$('crs'),F=['cE','cB0','cL0','cK','cX0','cY0','cDX','cDY','cDZ'];
+  PR.forEach(function(r,i){var o=document.createElement('option');o.value=i;o.textContent=r[0];cs.appendChild(o)});
+  function fill(){var r=PR[cs.value];F.forEach(function(id,i){$(id).value=r[i+1]});draw()}
+  cs.onchange=fill;F.forEach(function(id){$(id).addEventListener('input',draw)});fill();
+  function cdef(){return '+proj=tmerc +lat_0='+$('cB0').value+' +lon_0='+$('cL0').value+' +k='+$('cK').value+' +x_0='+$('cX0').value+' +y_0='+$('cY0').value+' +ellps='+$('cE').value+' +towgs84='+$('cDX').value+','+$('cDY').value+','+$('cDZ').value+',0,0,0,0 +units=m +no_defs'}
+  function lpts(L){return L.xy||L.ids.map(function(i){return pts[i]})}
+  function meas(L){var q=lpts(L),len=0,n=q.length,i,ar=0;
+    for(i=0;i<n-1;i++)len+=Math.hypot(q[i+1].e-q[i].e,q[i+1].n-q[i].n);
+    if(L.closed&&n>2)len+=Math.hypot(q[0].e-q[n-1].e,q[0].n-q[n-1].n);
+    if(n>2)for(i=0;i<n;i++){var a=q[i],b=q[(i+1)%n];ar+=a.e*b.n-b.e*a.n}
+    return 'الطول '+len.toFixed(2)+' م'+(L.closed?' | المساحة '+(Math.abs(ar)/2).toFixed(2)+' م²':'')}
+  var FM={P:'name',N:'n',E:'e',Z:'z',D:'code',X:'e',Y:'n','-':null},pend=null;
+  function fmtStr(){return $('ord').value==='CUSTOM'?$('ordc').value.toUpperCase().replace(/[^PNEZDXY\-]/g,''):$('ord').value}
+  function splitL(l){var d=$('dl').value;
+    if(d==='auto')d=l.indexOf(';')>=0?';':l.indexOf('\t')>=0?'tab':l.indexOf(',')>=0?',':' ';
+    if(d==='tab')return l.split('\t').map(function(x){return x.trim()});
+    return d===' '?l.split(/\s+/):l.split(d).map(function(x){return x.trim()})}
+  function parseTxt(t){
+    var f=fmtStr().split('').map(function(c){return FM[c]}),out=[],sk=+$('sk').value||0;
+    t.replace(/^\uFEFF/,'').split(/\r?\n/).forEach(function(l,i){
+      if(i<sk)return;l=l.trim();if(!l||/^(#|\/\/)/.test(l))return;
+      var k=splitL(l),p={type:'TP',name:String(out.length+1),n:NaN,e:NaN,z:NaN,code:''};
+      f.forEach(function(fd,j){var v=k[j];if(!fd||v===undefined||v==='')return;v=v.replace(/^"|"$/g,'');if(fd==='name'||fd==='code')p[fd]=v;else p[fd]=parseFloat(v.replace(',','.'))});
+      if(!isNaN(p.n)&&!isNaN(p.e))out.push(p)});
+    return out}
+  function isTxt(t,name){var x=name.split('.').pop().toLowerCase();return !(x==='dwg'||x==='dxf'||x==='sdr'||/^AC10\d\d/.test(t)||/^\s*0\s*\r?\n\s*SECTION/.test(t)||/^00NMSDR/.test(t))}
+  function pvUpdate(){
+    var cu=$('ord').value==='CUSTOM';$('ordc').style.display=cu?'':'none';$('cn').style.display=cu?'':'none';
+    if(!pend)return;var P=parseTxt(pend.t);
+    $('pr').textContent=P.length?'هيتقرا '+P.length+' نقطة | أول نقطة: '+P[0].name+' | N '+P[0].n+' | E '+P[0].e+' | Z '+(isNaN(P[0].z)?'-':P[0].z)+(P[0].code?' | '+P[0].code:''):'مفيش نقاط بالفورمات ده. غيّر الترتيب أو الفاصل';}
+  function showDlg(t,name){pend={t:t,name:name};$('dt').textContent='فورمات الملف: '+name;
+    $('pv').textContent=t.replace(/^\uFEFF/,'').split(/\r?\n/).filter(Boolean).slice(0,6).join('\n');pvUpdate();$('dlg').hidden=false}
+  ['ord','ordc','dl','sk'].forEach(function(i){$(i).addEventListener('input',pvUpdate)});
+  $('dok').onclick=function(){$('dlg').hidden=true;var q=pend;pend=null;if(q)try{load(q.t,q.name)}catch(e){info.textContent='خطأ: '+(e&&e.message)}};
+  $('dno').onclick=function(){$('dlg').hidden=true;pend=null};
+  $('rfmt').onclick=function(){if(raw&&isTxt(raw.t,raw.name))showDlg(raw.t,raw.name);else info.textContent='الملف الحالي مش TXT'};
+  function parseDXF(t){
+    if(/^AutoCAD Binary DXF/.test(t))return {pts:[],lines:[],msg:'ده DXF ثنائي (Binary). احفظه ASCII DXF من AutoCAD (SAVEAS)'};
+    var a=t.split(/\r?\n/),R={pts:[],lines:[]},inE=0,ent=null,poly=null,cnt=0,tx=[],cd={INSERT:[],CIRCLE:[]};
+    function g(c,all){var r=[];ent.v.forEach(function(p){if(p[0]==c)r.push(parseFloat(p[1]))});return all?r:r[0]}
+    function gs(c){var r=ent.v.filter(function(p){return p[0]==c});return r.length?r[0][1]:''}
+    function flush(){
+      if(!ent)return;var T=ent.t,x=g(10),y=g(20),z=g(30),ok=!isNaN(x)&&!isNaN(y),P={e:x,n:y,z:z===undefined?NaN:z};
+      if(T==='POINT'){if(ok){P.type='TP';P.name=String(++cnt);P.code=gs(8);R.pts.push(P)}}
+      else if(T==='INSERT'||T==='CIRCLE'){if(ok){P.code=T==='INSERT'?gs(2):gs(8);cd[T].push(P)}}
+      else if(T==='TEXT'||T==='MTEXT'){var s=gs(1).replace(/\\[A-Za-z][^;]*;/g,'').trim();if(s&&ok)tx.push({e:x,n:y,s:s})}
+      else if(T==='LINE')R.lines.push({xy:[{e:x,n:y,z:z||0},{e:g(11),n:g(21),z:g(31)||0}],closed:false});
+      else if(T==='LWPOLYLINE'){var X=g(10,1),Y=g(20,1);R.lines.push({xy:X.map(function(v,i){return {e:v,n:Y[i],z:0}}),closed:!!((g(70)||0)&1)})}
+      else if(T==='POLYLINE'){poly={xy:[],closed:!!((g(70)||0)&1)};R.lines.push(poly)}
+      else if(T==='VERTEX'&&poly)poly.xy.push({e:x,n:y,z:z||0});
+      else if(T==='SEQEND')poly=null;
+      ent=null}
+    for(var i=0;i+1<a.length;i+=2){
+      var c=a[i].trim(),v=a[i+1].trim();
+      if(c==='0'){flush();if(v==='ENDSEC')inE=0;else if(inE)ent={t:v,v:[]}}
+      else if(c==='2'&&!ent&&v==='ENTITIES')inE=1;
+      else if(ent)ent.v.push([c,v]);
+    }
+    flush();
+    R.lines=R.lines.filter(function(L){return L.xy.length>1&&L.xy.every(function(q){return !isNaN(q.e)&&!isNaN(q.n)})});
+    var src=R.pts.length?null:cd.INSERT.length?cd.INSERT:cd.CIRCLE.length?cd.CIRCLE:null;
+    if(src)src.forEach(function(q){q.type='TP';q.name=String(++cnt);R.pts.push(q)});
+    else if(!R.pts.length){var seen={};R.lines.forEach(function(L){L.xy.forEach(function(q){var k=q.e.toFixed(3)+','+q.n.toFixed(3);if(!seen[k]){seen[k]=1;R.pts.push({type:'TP',name:String(++cnt),e:q.e,n:q.n,z:q.z||NaN,code:''})}})})}
+    if(tx.length&&R.pts.length){
+      var es=R.pts.map(function(q){return q.e}),ns=R.pts.map(function(q){return q.n}),
+      r=Math.max(Math.max(Math.max.apply(0,es)-Math.min.apply(0,es),Math.max.apply(0,ns)-Math.min.apply(0,ns))*0.03,2);
+      R.pts.forEach(function(q){var bn=1/0,bz=1/0,nm=null,zz=null;
+        tx.forEach(function(w){var d=Math.hypot(w.e-q.e,w.n-q.n);if(d>r)return;
+          if(/^-?\d+\.\d+$/.test(w.s)){if(d<bz){bz=d;zz=+w.s}}else if(d<bn){bn=d;nm=w.s}});
+        if(nm)q.name=nm;if(zz!==null&&(isNaN(q.z)||q.z===0))q.z=zz})}
+    if(!R.pts.length)R.msg='الـ DXF مفيهوش نقاط ولا خطوط أقدر أقراها';
+    return R}
+  function parseAny(t,name){
+    var ext=name.split('.').pop().toLowerCase(),R={pts:[],lines:[]};
+    if(ext==='dwg'||/^AC10\d\d/.test(t)){R.msg='DWG مش بيتقرا في المتصفح. حوّله لـ DXF: في AutoCAD اعمل SAVEAS، أو استخدم برنامج ODA File Converter المجاني، وارفع الـ DXF';return R}
+    if(ext==='dxf'||/^\s*0\s*\r?\n\s*SECTION/.test(t))return parseDXF(t);
+    if(ext==='sdr'||/^00NMSDR/.test(t)){R.pts=parseSDR(t);if($('sdrsw').checked)R.pts.forEach(function(p){var x=p.e;p.e=p.n;p.n=x});return R}
+    R.pts=parseTxt(t);if(!R.pts.length)R.msg='ما قدرتش أقرا نقاط. جرّب تغيّر الفورمات من تبويب الاستيراد';return R}
+  function drawBase(w,h){
+    if(!bm)return;
+    try{
+      var e0=view.cx-w/2/view.s,e1=view.cx+w/2/view.s,n0=view.cy-h/2/view.s,n1=view.cy+h/2/view.s,
+      c4=[[e0,n0],[e1,n0],[e0,n1],[e1,n1]].map(function(q){return ll({e:q[0],n:q[1]})}),c=ll({e:view.cx,n:view.cy}),
+      Z=Math.max(2,Math.min(19,Math.round(Math.log(156543.03*Math.cos(c[1]*Math.PI/180)*view.s)/Math.LN2))),N=Math.pow(2,Z),
+      tx=function(lo){return Math.floor((lo+180)/360*N)},
+      ty=function(la){var r=la*Math.PI/180;return Math.floor((1-Math.log(Math.tan(r)+1/Math.cos(r))/Math.PI)/2*N)},
+      xs=c4.map(function(q){return tx(q[0])}),ys=c4.map(function(q){return ty(q[1])}),
+      x0=Math.min.apply(0,xs),x1=Math.max.apply(0,xs),y0=Math.min.apply(0,ys),y1=Math.max.apply(0,ys);
+      if((x1-x0+1)*(y1-y0+1)>80)return;
+      var TU=['','https://tile.openstreetmap.org/{z}/{x}/{y}.png','https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'];
+      var P=function(x,y){var q=proj4('WGS84',cdef(),[x/N*360-180,Math.atan(Math.sinh(Math.PI*(1-2*y/N)))*180/Math.PI]);return toScr({e:q[0]-dE,n:q[1]-dN})};
+      for(var X=x0;X<=x1;X++)for(var Y=y0;Y<=y1;Y++){
+        var key=bm+'/'+Z+'/'+X+'/'+Y,im=tiles[key];
+        if(!im){im=tiles[key]=new Image();im.crossOrigin='anonymous';
+          (function(im){im.onload=function(){im.ok=1;draw()};im.onerror=function(){info.textContent='صور الخريطة ما اتحملتش (محجوبة جوه صفحة Claude؟ افتح الملف المستقل بإنترنت)'}})(im);
+          im.src=TU[bm].replace('{z}',Z).replace('{x}',X).replace('{y}',Y)}
+        if(!im.ok)continue;
+        var a=P(X,Y),b=P(X+1,Y),d=P(X,Y+1);
+        ctx.setTransform(dpr*(b[0]-a[0])/256,dpr*(b[1]-a[1])/256,dpr*(d[0]-a[0])/256,dpr*(d[1]-a[1])/256,dpr*a[0],dpr*a[1]);
+        ctx.drawImage(im,0,0);
+      }
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    }catch(x){ctx.setTransform(dpr,0,0,dpr,0,0)}
+  }
+  $('bm').onclick=function(){bm=(bm+1)%3;this.textContent='الخريطة: '+['إيقاف','شوارع','قمر صناعي'][bm];draw()};
+  // ---- shapes / report / helpers ----
+  var mmode=false,mA=null,mB=null,lastSig='';
+  function dms(d){var D=Math.floor(d),m=Math.floor((d-D)*60),q=Math.round(((d-D)*60-m)*60);if(q===60){q=0;m++}if(m===60){m=0;D++}if(D===360)D=0;return D+'°'+('0'+m).slice(-2)+"'"+('0'+q).slice(-2)+'"'}
+  function fq3(a){var F=4200.833,f=Math.floor(a/F),r=a-f*F,q=Math.floor(r/(F/24));return [f,q,(r-q*F/24)/(F/576)]}
+  function fqs(a){var x=fq3(a);return x[0]+' فدان '+x[1]+' قيراط '+x[2].toFixed(1)+' سهم'}
+  function shapes(){
+    var R=[];
+    lines.forEach(function(L,idx){
+      var q=lpts(L),n=q.length;if(n<2)return;
+      var nm=L.ids?L.ids.map(function(k){return pts[k].name}):q.map(function(_,j){return 'V'+(j+1)});
+      var cl=!!L.closed&&n>2,m=cl?n:n-1,per=0,ar=0,cx=0,cy=0,sd=[],o=q[0],j,a,b,cr,dE,dN,d;
+      for(j=0;j<m;j++){
+        a=q[j];b=q[(j+1)%n];dE=b.e-a.e;dN=b.n-a.n;d=Math.hypot(dE,dN);per+=d;
+        sd.push({a:nm[j],b:nm[(j+1)%n],d:d,az:(Math.atan2(dE,dN)*180/Math.PI+360)%360});
+        var ae=a.e-o.e,an=a.n-o.n,be=b.e-o.e,bn=b.n-o.n;cr=ae*bn-be*an;ar+=cr;cx+=(ae+be)*cr;cy+=(an+bn)*cr;
+      }
+      ar/=2;
+      if(cl&&ar){cx=o.e+cx/(6*ar);cy=o.n+cy/(6*ar)}else{cx=q.reduce(function(t,p){return t+p.e},0)/n;cy=q.reduce(function(t,p){return t+p.n},0)/n}
+      R.push({idx:idx,name:L.name||('Shape '+(idx+1)),q:q,nm:nm,n:n,closed:cl,per:per,area:cl?Math.abs(ar):0,cx:cx,cy:cy,sides:sd});
+    });
+    return R}
+  function renderShapes(){
+    var box=$('shl'),S=shapes();box.innerHTML='';
+    if(!S.length){box.innerHTML='<div class="note">مفيش أشكال لسه. وصّل نقاط (يدوي) أو اعمل حدود تلقائية.</div>';return}
+    S.forEach(function(s){
+      var L=lines[s.idx],d=document.createElement('div');d.className='sh';
+      d.innerHTML='<div class="row"><input data-k="n" style="flex:1;min-width:110px"><label><input type="checkbox" data-k="c"> مقفول</label><button data-k="z">تكبير</button><button data-k="d">حذف</button></div><div class="note"></div>';
+      var q=function(k){return d.querySelector('[data-k='+k+']')};
+      q('n').value=s.name;q('c').checked=!!L.closed;
+      d.querySelector('.note').textContent=(s.closed?'المساحة '+s.area.toFixed(2)+' م² = '+fqs(s.area)+' | المحيط ':'خط مفتوح | الطول ')+s.per.toFixed(2)+' م | '+s.n+' نقطة';
+      q('n').oninput=function(){L.name=this.value;draw()};
+      q('c').onchange=function(){L.closed=this.checked;draw()};
+      q('d').onclick=function(){lines.splice(lines.indexOf(L),1);if(cur===L)cur=null;draw()};
+      q('z').onclick=function(){
+        var es=s.q.map(function(p){return p.e}),ns=s.q.map(function(p){return p.n}),w=cv.width/dpr,h=cv.height/dpr,
+        dx=Math.max(Math.max.apply(0,es)-Math.min.apply(0,es),1),dy=Math.max(Math.max.apply(0,ns)-Math.min.apply(0,ns),1);
+        view.s=Math.min((w-80)/dx,(h-80)/dy);view.cx=(Math.max.apply(0,es)+Math.min.apply(0,es))/2;view.cy=(Math.max.apply(0,ns)+Math.min.apply(0,ns))/2;draw()};
+      box.appendChild(d);
+    })}
+  function drawOver(w,h){crossDraw(w,h);
+    if(mA){var a=toScr(mA);ctx.strokeStyle='#ff9f1c';ctx.lineWidth=2;ctx.beginPath();ctx.arc(a[0],a[1],8,0,7);ctx.stroke();
+      if(mB){var b=toScr(mB);ctx.setLineDash([6,4]);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();ctx.setLineDash([]);ctx.beginPath();ctx.arc(b[0],b[1],8,0,7);ctx.stroke()}}
+    if($('oLen').checked||$('oArea').checked){
+      ctx.font='11px system-ui';ctx.fillStyle='#ffe08a';ctx.textAlign='center';
+      shapes().forEach(function(s){
+        if($('oLen').checked)s.sides.forEach(function(sd,j){var a=toScr(s.q[j]),b=toScr(s.q[(j+1)%s.n]);ctx.fillText(sd.d.toFixed(2),(a[0]+b[0])/2,(a[1]+b[1])/2-3)});
+        if($('oArea').checked&&s.closed){var c=toScr({e:s.cx,n:s.cy});ctx.fillText(s.area.toFixed(2)+' م²',c[0],c[1])}});
+      ctx.textAlign='left'}
+    if($('oScale').checked){ctx.direction='ltr';
+      var base=Math.pow(10,Math.floor(Math.log10(140/view.s))),bl=base;[1,2,5,10].forEach(function(k){if(base*k*view.s<=140)bl=base*k});
+      var Ln=bl*view.s,x0=14,y0=h-34;ctx.strokeStyle=ctx.fillStyle='#fff';ctx.lineWidth=2;ctx.font='11px system-ui';ctx.textAlign='left';ctx.direction='ltr';
+      ctx.beginPath();ctx.moveTo(x0,y0-5);ctx.lineTo(x0,y0);ctx.lineTo(x0+Ln,y0);ctx.lineTo(x0+Ln,y0-5);ctx.stroke();
+      ctx.fillText(bl>=1000?(bl/1000)+' km':bl+' m',x0,y0-9);
+      ctx.beginPath();ctx.moveTo(w-30,18);ctx.lineTo(w-22,42);ctx.lineTo(w-30,36);ctx.lineTo(w-38,42);ctx.closePath();ctx.fill();ctx.fillText('N',w-34,56)}
+    var sg=lines.map(function(L){return (L.ids?L.ids.length:'x'+L.xy.length)+(L.closed?'c':'o')}).join('|');
+    if(sg!==lastSig){lastSig=sg;renderShapes()}
+  }
+  function measTap(p){
+    if(!mA||mB){mA=p;mB=null;info.textContent='نقطة أ: '+p.name+' — اضغط نقطة ب';return}
+    mB=p;var dE=p.e-mA.e,dN=p.n-mA.n,d=Math.hypot(dE,dN),az=(Math.atan2(dE,dN)*180/Math.PI+360)%360,dz=p.z-mA.z;
+    info.textContent=mA.name+' ← '+p.name+' | أفقي '+d.toFixed(3)+' م | اتجاه '+dms(az)+(isNaN(dz)?'':' | فرق منسوب '+dz.toFixed(3)+' | ميل '+(d?(dz/d*100).toFixed(2):0)+'% | مائل '+Math.hypot(d,dz).toFixed(3)+' م')}
+  $('meas').onclick=function(){mmode=!mmode;this.classList.toggle('on',mmode);mA=mB=null;if(mmode){manual=false;$('manual').classList.remove('on');cur=null;info.textContent='اضغط نقطة أ ثم نقطة ب'}draw()};
+  ['oGrid','oScale','oLen','oArea'].forEach(function(i){$(i).addEventListener('input',draw)});
+  function findPt(){
+    var q=$('fq').value.trim().toLowerCase();if(!q)return;
+    var p=pts.filter(function(x){return x.name.toLowerCase()===q})[0]||pts.filter(function(x){return x.name.toLowerCase().indexOf(q)>=0})[0];
+    if(!p){info.textContent='النقطة "'+q+'" مش موجودة';return}
+    sel=p;view.cx=p.e;view.cy=p.n;draw();
+    info.textContent='نقطة '+p.name+' | N '+p.n.toFixed(3)+' | E '+p.e.toFixed(3)+' | Z '+(isNaN(p.z)?'-':p.z.toFixed(3))+(p.code?' | '+p.code:'')}
+  $('fnd').onclick=findPt;$('fq').addEventListener('keydown',function(e){if(e.key==='Enter')findPt()});
+  $('sum').onclick=function(){
+    if(!pts.length){$('sumr').textContent='ارفع ملف الأول';return}
+    var r=function(k){var v=pts.map(function(p){return p[k]}).filter(function(x){return !isNaN(x)});return v.length?[Math.min.apply(0,v),Math.max.apply(0,v),v.reduce(function(a,b){return a+b},0)/v.length]:null},E=r('e'),N=r('n'),Z=r('z');
+    $('sumr').textContent='عدد النقاط: '+pts.length+' (محطات: '+pts.filter(function(p){return p.type==='KI'}).length+')\nE: '+E[0].toFixed(3)+' → '+E[1].toFixed(3)+' (مدى '+(E[1]-E[0]).toFixed(2)+' م)\nN: '+N[0].toFixed(3)+' → '+N[1].toFixed(3)+' (مدى '+(N[1]-N[0]).toFixed(2)+' م)'+(Z?'\nالمناسيب: '+Z[0].toFixed(3)+' → '+Z[1].toFixed(3)+' | المتوسط '+Z[2].toFixed(3):'')+'\nالأشكال: '+shapes().length};
+  function repCsv(){
+    var S=shapes(),o=['\uFEFFShape,Closed,Vertices,Perimeter m,Area m2,Feddan,Qirat,Sahm,Hectare,Centroid E,Centroid N'];
+    S.forEach(function(x){var f=fq3(x.area);o.push([x.name,x.closed?'yes':'no',x.n,x.per.toFixed(3),x.closed?x.area.toFixed(3):'',x.closed?f[0]:'',x.closed?f[1]:'',x.closed?f[2].toFixed(1):'',x.closed?(x.area/10000).toFixed(4):'',x.cx.toFixed(3),x.cy.toFixed(3)].join(','))});
+    o.push('','Shape,From,To,Length m,Azimuth deg,Azimuth DMS');
+    S.forEach(function(x){x.sides.forEach(function(d){o.push([x.name,d.a,d.b,d.d.toFixed(3),d.az.toFixed(4),dms(d.az)].join(','))})});
+    o.push('','Shape,#,Point,E,N,Z');
+    S.forEach(function(x){x.q.forEach(function(p,j){o.push([x.name,j+1,x.nm[j],p.e.toFixed(3),p.n.toFixed(3),isNaN(p.z)?'':p.z.toFixed(3)].join(','))})});
+    return o.join('\r\n')}
+  function reportPages(){
+    var W=1240,H=1754,M=50,CW=W-2*M,pg=[],g,y,S=shapes(),ttl=$('rt').value||fname;
+    function T(t,x,yy,al,f,c){g.font=f||'26px system-ui';g.fillStyle=c||'#111';g.textAlign=al;g.direction=al==='right'?'rtl':'ltr';g.fillText(t,x,yy)}
+    function np(){
+      var c=document.createElement('canvas');c.width=W;c.height=H;g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,W,H);pg.push(c);
+      var f=pg.length===1;g.fillStyle='#06214f';g.fillRect(0,0,W,f?170:70);
+      if(f){try{g.drawImage($('logo'),M,15,140,140)}catch(e){}}
+      T(ttl,W-M,f?80:45,'right','bold 40px system-ui','#fff');
+      if(f){T('AHMED KHALID – SURVEY & TECHNICAL OFFICE',W-M,122,'right','22px system-ui','#9cc8ff');T(new Date().toISOString().slice(0,10),W-M,153,'right','20px system-ui','#cfd8e8')}
+      y=f?215:110}
+    function need(h){if(y+h>H-70)np()}
+    function row(cells,ws,hd){
+      need(44);var x=W-M,i;
+      if(hd){g.fillStyle='#dfe9ff';g.fillRect(M,y-27,CW,38)}
+      for(i=0;i<cells.length;i++){x-=ws[i];T(String(cells[i]),x+ws[i]/2,y,'center',(hd?'bold ':'')+'22px system-ui')}
+      g.strokeStyle='#d0d7e6';g.beginPath();g.moveTo(M,y+11);g.lineTo(W-M,y+11);g.stroke();y+=40}
+    np();
+    T('الملف: '+fname,W-M,y,'right');y+=38;
+    T('النقاط: '+pts.length+'   |   الأشكال: '+S.length,W-M,y,'right');y+=38;
+    T('نظام الإحداثيات: '+PR[cs.value][0]+((dE||dN)?' (مضبوط)':''),W-M,y,'right');y+=30;
+    var bh=Math.min(620,CW*cv.height/cv.width),sc=Math.min(CW/cv.width,bh/cv.height);
+    g.fillStyle=TH.sb;g.fillRect(M,y,CW,bh);g.drawImage(cv,M+(CW-cv.width*sc)/2,y+(bh-cv.height*sc)/2,cv.width*sc,cv.height*sc);y+=bh+55;
+    if(S.length){
+      T('ملخص الأشكال',W-M,y,'right','bold 30px system-ui','#06214f');y+=44;
+      var w1=[300,160,220,300,160];row(['الشكل','النوع','المساحة م²','فدان / قيراط / سهم','المحيط م'],w1,1);
+      S.forEach(function(x){row([x.name,x.closed?'مقفول':'مفتوح',x.closed?x.area.toFixed(2):'-',x.closed?fqs(x.area):'-',x.per.toFixed(2)],w1)});
+    }
+    var w2=[60,150,170,170,120,200,140,130];
+    S.forEach(function(x){
+      need(260);y+=24;T(x.name,W-M,y,'right','bold 30px system-ui','#06214f');y+=42;
+      if(x.closed){T('المساحة: '+x.area.toFixed(3)+' م²  =  '+fqs(x.area)+'  =  '+(x.area/10000).toFixed(4)+' هكتار',W-M,y,'right');y+=38}
+      T((x.closed?'المحيط: ':'الطول الكلي: ')+x.per.toFixed(3)+' م   |   النقاط: '+x.n+'   |   المركز: E '+x.cx.toFixed(2)+'  N '+x.cy.toFixed(2),W-M,y,'right');y+=46;
+      row(['#','النقطة','E','N','Z','الضلع','الطول م','الاتجاه'],w2,1);
+      x.q.forEach(function(p,j){var d=x.sides[j];row([j+1,x.nm[j],p.e.toFixed(3),p.n.toFixed(3),isNaN(p.z)?'-':p.z.toFixed(3),d?d.a+' → '+d.b:'',d?d.d.toFixed(2):'',d?dms(d.az):''],w2)});
+    });
+    pg.forEach(function(c,i){var k=c.getContext('2d');k.font='20px system-ui';k.fillStyle='#666';k.textAlign='center';k.direction='ltr';k.fillText((i+1)+' / '+pg.length+'    AK Survey',W/2,H-30)});
+    return pg}
+  $('rcsv').onclick=function(){if(!shapes().length){info.textContent='مفيش أشكال للتقرير';return}save(fname+'_report.csv',repCsv())};
+  $('rpdf').onclick=function(){
+    if(!shapes().length){info.textContent='مفيش أشكال للتقرير. وصّل نقاط أو اعمل حدود تلقائية';return}
+    Promise.all(reportPages().map(function(c){return new Promise(function(ok,no){c.toBlob(function(b){b?ok(b.arrayBuffer()):no()},'image/jpeg',.92)}).then(function(ab){return {jpg:new Uint8Array(ab),w:c.width,h:c.height,full:1}})}))
+    .then(function(pg){save(fname+'_report.pdf',pdfN(pg))}).catch(function(){info.textContent='تعذر إنشاء التقرير'})};
+  // ---- UI shell ----
+  var tabsB=document.querySelectorAll('#tabs button'),panes=document.querySelectorAll('.pane');
+  function setTab(k){
+    if(!k&&window.innerWidth>=900)k='file';
+    document.body.dataset.tab=k;
+    tabsB.forEach(function(b){b.classList.toggle('on',b.dataset.t===k)});
+    panes.forEach(function(q){q.hidden=q.dataset.t!==k});
+    if(k==='print')pvSheet();
+    setTimeout(resize,40)}
+  tabsB.forEach(function(b){b.onclick=function(){setTab(document.body.dataset.tab===b.dataset.t&&window.innerWidth<900?'':b.dataset.t)}});
+  $('fopen').onclick=$('ebtn').onclick=function(){$('file').click()};
+  $('zi').onclick=function(){zoomAt(cv.width/dpr/2,cv.height/dpr/2,1.4)};
+  $('zo').onclick=function(){zoomAt(cv.width/dpr/2,cv.height/dpr/2,1/1.4)};
+  // ---- print sheet (SURVEY SHEET template) ----
+  var PAPER={A5:[148,210],A4:[210,297],A3:[297,420],A2:[420,594],Letter:[215.9,279.4],Legal:[215.9,355.6]},pvi=0;
+  function ppt(o){var P=(PAPER[o.paper]||PAPER.A4).slice();if(o.land)P.reverse();return [+(P[0]/25.4*72).toFixed(2),+(P[1]/25.4*72).toFixed(2)]}
+  var SCW=[135,170,170,123,106],FF='Calibri,"Segoe UI",Tahoma,Arial,sans-serif';
+  function sOpts(){return {paper:$('pp').value,dpi:+$('pq').value||300,foot:$('pf').checked,land:$('pland').checked,title:$('ptl').value||'SURVEY SHEET',layer:$('pl').value,sector:$('ps').value,date:$('pd').value,rpp:Math.min(44,Math.max(5,Math.round(+$('prr').value||40))),inc:$('pk').checked,fill:$('pe').checked}}
+  function sRows(o){return pts.filter(function(q){return o.inc||q.type!=='KI'})}
+  function sPages(o){return Math.max(1,Math.ceil(sRows(o).length/o.rpp))}
+  function drawSheet(o,pi,dpi){
+    var PS=(PAPER[o.paper]||PAPER.A4).slice();if(o.land)PS.reverse();var W=Math.round(PS[0]/25.4*dpi),H=Math.round(PS[1]/25.4*dpi),c=document.createElement('canvas'),nr=o.fill?o.rpp:Math.max(1,Math.min(o.rpp,sRows(o).length-pi*o.rpp)),hn=128+20*nr,k=Math.min(W/dpi*96*.9/704,H/dpi*96*.92/hn),u=dpi/96*k;c.width=W;c.height=H;
+    var g=c.getContext('2d'),cw=SCW.map(function(x){return x*u}),tw=cw.reduce(function(a,b){return a+b},0),x0=(W-tw)/2,y=(H-hn*u)/2,R=sRows(o),N=sPages(o);
+    g.fillStyle='#fff';g.fillRect(0,0,W,H);g.lineWidth=Math.max(1,u);g.strokeStyle='#000';g.textBaseline='middle';g.textAlign='center';
+    function cell(x,w,h,bg,t,pt,bold,col){
+      g.fillStyle=bg||'#fff';g.fillRect(x,y,w,h);g.strokeRect(x,y,w,h);
+      if(t===''||t==null)return;t=String(t);
+      var s2=pt*4/3*u;g.fillStyle=col||'#000';g.direction=/[\u0600-\u06FF]/.test(t)?'rtl':'ltr';
+      do{g.font=(bold?'bold ':'')+s2+'px '+FF;s2*=.94}while(g.measureText(t).width>w-10*u&&s2>6*u);
+      g.fillText(t,x+w/2,y+h/2+u)}
+    var dt=o.date?new Date(o.date.replace(/-/g,'/')+' 12:00'):new Date(),day,ds;
+    try{day=dt.toLocaleDateString('ar-EG-u-nu-latn',{weekday:'long'});ds=dt.toLocaleDateString('ar-EG-u-nu-latn',{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}catch(e){day='';ds=o.date}
+    var B='#5B9BD5',G='#C6E0B4',Y='#FFFF00',h1=28*u,h2=36*u,h3=31*u,h4=33*u,hr=20*u,xx,i;
+    cell(x0,tw,h1,B,o.title,16,0,'#fff');y+=h1;
+    cell(x0,cw[0],h2,Y,o.layer,11);cell(x0+cw[0],cw[1],h2,G,'الطبقة',12,1);cell(x0+cw[0]+cw[1],cw[2],h2,Y,o.sector,11);cell(x0+cw[0]+cw[1]+cw[2],cw[3]+cw[4],h2,G,'قطاع :',14);y+=h2;
+    cell(x0,cw[0],h3,Y,day,11);cell(x0+cw[0],cw[1],h3,G,'اليوم',12,1);cell(x0+cw[0]+cw[1],cw[2],h3,Y,ds,11);cell(x0+cw[0]+cw[1]+cw[2],cw[3]+cw[4],h3,G,'التاريخ :',12,1);y+=h3;
+    xx=x0;['PT','EASTING','NORTHING','ELEVATION','DESC..'].forEach(function(t,j){cell(xx,cw[j],h4,B,t,12);xx+=cw[j]});y+=h4;
+    for(i=0;i<o.rpp;i++){
+      var q=R[pi*o.rpp+i];if(!q&&!o.fill)break;
+      var v=q?[q.name,q.e.toFixed(3),q.n.toFixed(3),isNaN(q.z)?'':q.z.toFixed(3),q.code||'']:['','','','',''];xx=x0;
+      v.forEach(function(t,j){cell(xx,cw[j],hr,'#fff',t,11);xx+=cw[j]});y+=hr}
+    g.direction='ltr';g.font=(9*4/3*u)+'px '+FF;g.fillStyle='#777';g.textBaseline='alphabetic';
+    g.textAlign='left';if(o.foot)g.fillText('AHMED KHALID – SURVEY & TECHNICAL OFFICE',x0,H-26*u);
+    g.textAlign='right';g.fillText('Page '+(pi+1)+' / '+N+'   |   Points: '+R.length,x0+tw,H-26*u);
+    return c}
+  var pvT=0;
+  function pvSheet(){clearTimeout(pvT);pvT=setTimeout(function(){
+    var o=sOpts(),c=drawSheet(o,Math.min(pvi,sPages(o)-1),100),v=$('ppv');v.width=c.width;v.height=c.height;v.getContext('2d').drawImage(c,0,0);
+    v.style.width=$('pz').value+'%';$('ppn').textContent='صفحة '+(Math.min(pvi,sPages(o)-1)+1)+' من '+sPages(o)+' | عدد النقاط: '+sRows(o).length},120)}
+  (function(){
+    var d=new Date(),z=function(n){return ('0'+n).slice(-2)};$('pd').value=d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate());
+    ['ptl','pl','ps','prr'].forEach(function(i){try{var v=localStorage.getItem('ak_'+i);if(v!==null)$(i).value=v}catch(e){}});
+    ['ptl','pl','ps','pd','prr','pk','pe','pp','pq','pf','pland','pz'].forEach(function(i){$(i).addEventListener('input',function(){pvSheet();try{if($(i).type!=='checkbox'&&i!=='pd')localStorage.setItem('ak_'+i,$(i).value)}catch(e){}})});
+  })();
+  $('ppdf').onclick=function(){
+    if(!pts.length){info.textContent='ارفع ملف الأول';return}
+    var o=sOpts(),N=sPages(o),pg=[],i=0,only=$('prg').value==='cur'?Math.min(pvi,N-1):-1;if(only>=0){i=only;N=only+1}info.textContent='جاري تجهيز الصفحات…';
+    (function next(){
+      if(i>=N){save(fname+'_print.pdf',pdfN(pg));info.textContent='تم تجهيز الـ PDF ('+N+' صفحة)';return}
+      var c=drawSheet(o,i,o.dpi);
+      c.toBlob(function(b){if(!b){info.textContent='الدقة عالية جدًا للجهاز، قلّل الـ DPI';return}b.arrayBuffer().then(function(ab){pg.push({jpg:new Uint8Array(ab),w:c.width,h:c.height,full:1,pw:ppt(o)[0],ph:ppt(o)[1]});c.width=1;i++;setTimeout(next,0)})},'image/jpeg',.98)})()};
+  setTab('file');
+  // ---- surface ----
+  function delaunay(P){
+    var n=P.length,mnE=1/0,mxE=-1/0,mnN=1/0,mxN=-1/0;
+    P.forEach(function(p){mnE=Math.min(mnE,p.e);mxE=Math.max(mxE,p.e);mnN=Math.min(mnN,p.n);mxN=Math.max(mxN,p.n)});
+    var d=Math.max(mxE-mnE,mxN-mnN)||1,mE=(mnE+mxE)/2,mN=(mnN+mxN)/2;
+    var V=P.map(function(p){return [p.e-mE,p.n-mN]});V.push([-20*d,-d],[0,20*d],[20*d,-d]);
+    function inC(p,t){var a=V[t[0]],b=V[t[1]],c=V[t[2]],ax=a[0]-p[0],ay=a[1]-p[1],bx=b[0]-p[0],by=b[1]-p[1],cx=c[0]-p[0],cy=c[1]-p[1],
+      det=(ax*ax+ay*ay)*(bx*cy-cx*by)-(bx*bx+by*by)*(ax*cy-cx*ay)+(cx*cx+cy*cy)*(ax*by-bx*ay),o=(b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]);
+      return o>0?det>0:det<0}
+    var T=[[n,n+1,n+2]];
+    for(var i=0;i<n;i++){
+      var E={};
+      T=T.filter(function(t){
+        if(!inC(V[i],t))return true;
+        for(var k=0;k<3;k++){var a=t[k],b=t[(k+1)%3],key=Math.min(a,b)+'_'+Math.max(a,b);E[key]=E[key]?E[key]+1:1;E[key+'e']=[a,b]}
+        return false});
+      Object.keys(E).forEach(function(k){if(k.slice(-1)!=='e'&&E[k]===1)T.push([E[k+'e'][0],E[k+'e'][1],i])});
+    }
+    return T.filter(function(t){return t[0]<n&&t[1]<n&&t[2]<n})}
+  function vp(t,r,sg){
+    var P=tin.P,Q=t.map(function(i){return [P[i].e,P[i].n,(P[i].z-r)*sg]}),o=[],k,v=0;
+    for(k=0;k<3;k++){var a=Q[k],b=Q[(k+1)%3];if(a[2]>=0)o.push(a);
+      if((a[2]>=0)!==(b[2]>=0)){var u=a[2]/(a[2]-b[2]);o.push([a[0]+u*(b[0]-a[0]),a[1]+u*(b[1]-a[1]),0])}}
+    for(k=1;k+1<o.length;k++){var A=o[0],B=o[k],C=o[k+1];v+=Math.abs((B[0]-A[0])*(C[1]-A[1])-(C[0]-A[0])*(B[1]-A[1]))/2*(A[2]+B[2]+C[2])/3}
+    return v}
+  function conts(){
+    var st=+$('ci').value||0.25;if(tin.cs&&tin.cs.st===st)return tin.cs.L;
+    var L={},P=tin.P;
+    tin.T.forEach(function(t){
+      var zz=t.map(function(i){return P[i].z}),lo=Math.min.apply(0,zz),hi=Math.max.apply(0,zz);
+      for(var j=Math.ceil(lo/st);j*st<=hi;j++){
+        var lv=j*st,q=[];
+        for(var k=0;k<3;k++){var a=P[t[k]],b=P[t[(k+1)%3]],da=a.z-lv,db=b.z-lv;
+          if((da<0)!==(db<0)){var u=da/(da-db);q.push({e:a.e+u*(b.e-a.e),n:a.n+u*(b.n-a.n),z:lv})}}
+        if(q.length>=2)(L[lv.toFixed(4)]=L[lv.toFixed(4)]||[]).push([q[0],q[1]]);
+      }});
+    tin.cs={st:st,L:L};return L}
+  function drawCont(){
+    var L=conts(),st=+$('ci').value||0.25;
+    Object.keys(L).forEach(function(k){
+      var lv=+k,mj=Math.round(lv/st)%5===0;
+      ctx.strokeStyle=mj?'#ffd24d':'rgba(255,210,77,.6)';ctx.lineWidth=mj?1.6:.8;ctx.beginPath();
+      L[k].forEach(function(s){var a=toScr(s[0]),b=toScr(s[1]);ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1])});ctx.stroke();
+      if(mj){var m=L[k][Math.floor(L[k].length/2)],q=toScr(m[0]);ctx.fillStyle='#ffd24d';ctx.font='10px system-ui';ctx.fillText(lv.toFixed(2),q[0]+2,q[1]-2)}})}
+  $('tinb').onclick=function(){
+    var P=pts.filter(function(p){return p.type!=='KI'&&!isNaN(p.z)});
+    if(P.length<3){$('rep').textContent='محتاج 3 نقاط بمناسيب على الأقل';return}
+    var T=delaunay(P),me=+$('maxe').value||0;
+    if(me)T=T.filter(function(t){return [0,1,2].every(function(k){var a=P[t[k]],b=P[t[(k+1)%3]];return Math.hypot(a.e-b.e,a.n-b.n)<=me})});
+    var zs=P.map(function(p){return p.z}),a2=0,a3=0;
+    T.forEach(function(t){var a=P[t[0]],b=P[t[1]],c=P[t[2]],ux=b.e-a.e,uy=b.n-a.n,uz=b.z-a.z,vx=c.e-a.e,vy=c.n-a.n,vz=c.z-a.z,cz=ux*vy-uy*vx;
+      a2+=Math.abs(cz)/2;a3+=Math.sqrt(Math.pow(uy*vz-uz*vy,2)+Math.pow(uz*vx-ux*vz,2)+cz*cz)/2});
+    var zmin=Math.min.apply(0,zs),zmax=Math.max.apply(0,zs);
+    tin={P:P,T:T,zmin:zmin,zmax:zmax,dz:zmax-zmin,cs:null};showTin=true;
+    tin.txt='سطح TIN: '+T.length+' مثلث | مساحة أفقية '+a2.toFixed(1)+' م² | مساحة السطح '+a3.toFixed(1)+' م² | المناسيب '+zmin.toFixed(3)+' إلى '+zmax.toFixed(3);
+    $('ref').value=(zs.reduce(function(x,y){return x+y},0)/zs.length).toFixed(3);
+    $('rep').textContent=tin.txt;draw()};
+  $('tinv').onclick=function(){showTin=!showTin;draw()};
+  $('shd').onclick=function(){shade=!shade;this.classList.toggle('on',shade);draw()};
+  $('cnt').onclick=function(){showCnt=!showCnt;this.classList.toggle('on',showCnt);draw()};
+  $('ci').addEventListener('input',draw);
+  $('vol').onclick=function(){
+    if(!tin){$('rep').textContent='أنشئ السطح الأول';return}
+    var r=+$('ref').value,c=0,f=0;tin.T.forEach(function(t){c+=vp(t,r,1);f+=vp(t,r,-1)});
+    $('rep').textContent=tin.txt+'\nعند منسوب '+r+': حفر (فوق المنسوب) '+c.toFixed(1)+' م³ | ردم (تحت المنسوب) '+f.toFixed(1)+' م³ | الصافي '+(c-f).toFixed(1)+' م³'};
+  function ll(p){try{return proj4(cdef(),'WGS84',[p.e+dE,p.n+dN])}catch(x){return null}}
+  $('cal').onclick=function(){
+    if(!sel){info.textContent='اضغط على نقطة الأول';return}
+    var m=$('tll').value.match(/-?\d+(\.\d+)?/g);if(!m||m.length<2){info.textContent='اكتب Lat, Lon';return}
+    try{var q=proj4('WGS84',cdef(),[+m[1],+m[0]]);dE=q[0]-sel.e;dN=q[1]-sel.n;info.textContent='تم الضبط: إزاحة E '+dE.toFixed(2)+' م ، N '+dN.toFixed(2)+' م'}catch(x){info.textContent='تعذر الضبط'}
+  };
+  $('calx').onclick=function(){dE=dN=0;info.textContent='اتلغى الضبط'};
+  function csv(withLL){
+    var r=['Name,Northing,Easting,Elevation,Code'+(withLL?',Lat,Lon':'')];
+    pts.forEach(function(p){
+      var s=[p.name,f(p.n,3),f(p.e,3),f(p.z,3),p.code];
+      if(withLL){var g=ll(p);s.push(g?g[1].toFixed(8):'',g?g[0].toFixed(8):'')}
+      r.push(s.map(function(x){return /[",]/.test(x)?'"'+x.replace(/"/g,'""')+'"':x}).join(','));
+    });
+    return r.join('\r\n');
+  }
+  function dxf(){
+    var th=+$('th').value||0.5,o=[];
+    function A(){for(var i=0;i<arguments.length;i++)o.push(String(arguments[i]))}
+    function v(x){return (isNaN(x)?0:x).toFixed(3)}
+    var LY=[['POINTS',7],['PT_NO',2],['PT_ELEV',3],['LINES',4],['TIN',8],['CONTOUR',30]];
+    A(0,'SECTION',2,'HEADER',9,'$ACADVER',1,'AC1009',9,'$PDMODE',70,35,9,'$PDSIZE',40,(th*0.6).toFixed(3),0,'ENDSEC');
+    A(0,'SECTION',2,'TABLES',0,'TABLE',2,'LTYPE',70,1,0,'LTYPE',2,'CONTINUOUS',70,0,3,'Solid line',72,65,73,0,40,0,0,'ENDTAB');
+    A(0,'TABLE',2,'LAYER',70,LY.length);
+    LY.forEach(function(l){A(0,'LAYER',2,l[0],70,0,62,l[1],6,'CONTINUOUS')});
+    A(0,'ENDTAB',0,'TABLE',2,'STYLE',70,1,0,'STYLE',2,'STANDARD',70,0,40,0,41,1,50,0,71,0,42,th,3,'txt',4,'',0,'ENDTAB',0,'ENDSEC');
+    A(0,'SECTION',2,'ENTITIES');
+    pts.forEach(function(p){
+      A(0,'POINT',8,'POINTS',10,v(p.e),20,v(p.n),30,v(p.z));
+      A(0,'TEXT',8,'PT_NO',10,v(p.e+th*0.4),20,v(p.n+th*0.3),30,0,40,th.toFixed(3),1,p.name);
+      if(!isNaN(p.z))A(0,'TEXT',8,'PT_ELEV',10,v(p.e+th*0.4),20,v(p.n-th*1.3),30,0,40,th.toFixed(3),1,p.z.toFixed(3));
+    });
+    lines.forEach(function(L){
+      var q=lpts(L).slice();if(L.closed&&q.length)q.push(q[0]);
+      for(var i=0;i<q.length-1;i++){var a=q[i],b=q[i+1];A(0,'LINE',8,'LINES',10,v(a.e),20,v(a.n),30,v(a.z),11,v(b.e),21,v(b.n),31,v(b.z))}
+    });
+    if(tin){
+      tin.T.forEach(function(t){var a=tin.P[t[0]],b=tin.P[t[1]],c=tin.P[t[2]];A(0,'3DFACE',8,'TIN',10,v(a.e),20,v(a.n),30,v(a.z),11,v(b.e),21,v(b.n),31,v(b.z),12,v(c.e),22,v(c.n),32,v(c.z),13,v(c.e),23,v(c.n),33,v(c.z))});
+      var Lc=conts();Object.keys(Lc).forEach(function(k){Lc[k].forEach(function(q){A(0,'LINE',8,'CONTOUR',10,v(q[0].e),20,v(q[0].n),30,v(q[0].z),11,v(q[1].e),21,v(q[1].n),31,v(q[1].z))})});
+    }
+    A(0,'ENDSEC',0,'EOF');return o.join('\r\n')+'\r\n';
+  }
+  function crc(b){var t=crc.t,c,i,k;if(!t){t=crc.t=[];for(i=0;i<256;i++){c=i;for(k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[i]=c>>>0}}c=-1;for(i=0;i<b.length;i++)c=t[(c^b[i])&255]^(c>>>8);return (c^-1)>>>0}
+  function zip(name,text){
+    var E=new TextEncoder(),nb=E.encode(name),d=E.encode(text),cr=crc(d),
+    h=function(v){return [v&255,(v>>8)&255]},w=function(v){return [v&255,(v>>8)&255,(v>>16)&255,(v>>>24)&255]},
+    loc=[].concat(w(0x04034b50),h(20),h(0x0800),h(0),h(0),h(0x21),w(cr),w(d.length),w(d.length),h(nb.length),h(0)),
+    cd=[].concat(w(0x02014b50),h(20),h(20),h(0x0800),h(0),h(0),h(0x21),w(cr),w(d.length),w(d.length),h(nb.length),h(0),h(0),h(0),h(0),w(0),w(0));
+    var a=[].concat(loc,Array.from(nb)),off=a.length+d.length,c=cd.concat(Array.from(nb));
+    var end=[].concat(w(0x06054b50),h(0),h(0),h(1),h(1),w(c.length),w(off),h(0));
+    var out=new Uint8Array(off+c.length+end.length);out.set(a,0);out.set(d,a.length);out.set(c,off);out.set(end,off+c.length);return out;
+  }
+  function snap(type){
+    var c=document.createElement('canvas');c.width=cv.width;c.height=cv.height;var g=c.getContext('2d');
+    g.fillStyle=TH.sb;g.fillRect(0,0,c.width,c.height);g.drawImage(cv,0,0);
+    return new Promise(function(res,rej){try{c.toBlob(function(b){b?res(b):rej()},type,.92)}catch(e){rej(e)}})}
+  function pdfN(pg){
+    var E=new TextEncoder(),parts=[],off=[],len=0,n=pg.length;
+    function add(x){var b=typeof x==='string'?E.encode(x):x;parts.push(b);len+=b.length}
+    function obj(k,t){off[k]=len;add(k+' 0 obj\n'+t+'\nendobj\n')}
+    add('%PDF-1.4\n');obj(1,'<</Type/Catalog/Pages 2 0 R>>');
+    obj(2,'<</Type/Pages/Kids['+pg.map(function(_,i){return (3+3*i)+' 0 R'}).join(' ')+']/Count '+n+'>>');
+    pg.forEach(function(p,i){
+      var PW=p.pw||(p.w>p.h?842:595),PH=p.ph||(p.w>p.h?595:842),m=p.full?0:24,sc=Math.min((PW-2*m)/p.w,(PH-2*m)/p.h),iw=p.w*sc,ih=p.h*sc,o=3+3*i,
+      c='q '+iw.toFixed(2)+' 0 0 '+ih.toFixed(2)+' '+((PW-iw)/2).toFixed(2)+' '+((PH-ih)/2).toFixed(2)+' cm /Im0 Do Q';
+      obj(o,'<</Type/Page/Parent 2 0 R/MediaBox[0 0 '+PW+' '+PH+']/Resources<</XObject<</Im0 '+(o+2)+' 0 R>>>>/Contents '+(o+1)+' 0 R>>');
+      obj(o+1,'<</Length '+c.length+'>>\nstream\n'+c+'\nendstream');
+      off[o+2]=len;add((o+2)+' 0 obj\n<</Type/XObject/Subtype/Image/Width '+p.w+'/Height '+p.h+'/ColorSpace/DeviceRGB/BitsPerComponent 8/Filter/DCTDecode/Length '+p.jpg.length+'>>\nstream\n');add(p.jpg);add('\nendstream\nendobj\n');
+    });
+    var tot=3+3*n,xr=len,t='xref\n0 '+tot+'\n0000000000 65535 f \n';
+    for(var i=1;i<tot;i++)t+=String(off[i]).padStart(10,'0')+' 00000 n \n';
+    add(t+'trailer\n<</Size '+tot+'/Root 1 0 R>>\nstartxref\n'+xr+'\n%%EOF');
+    var out=new Uint8Array(len),q=0;parts.forEach(function(b){out.set(b,q);q+=b.length});return out}
+  function kml(){
+    var X=function(q){return String(q).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')},o=[],bad=0;
+    function co(q){var g=ll(q);if(!g||isNaN(g[0])||isNaN(g[1])){bad++;return null}return g[0].toFixed(8)+','+g[1].toFixed(8)+','+(isNaN(q.z)?0:q.z).toFixed(3)}
+    o.push('<?xml version="1.0" encoding="UTF-8"?>\n<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>'+X(fname)+'</name>',
+      '<Style id="p"><IconStyle><scale>0.6</scale><Icon><href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href></Icon></IconStyle><LabelStyle><scale>0.8</scale></LabelStyle></Style>',
+      '<Style id="l"><LineStyle><color>ffffd27f</color><width>2</width></LineStyle><PolyStyle><color>33ffd27f</color></PolyStyle></Style>',
+      '<Style id="c"><LineStyle><color>ff4dd2ff</color><width>1</width></LineStyle></Style><Folder><name>Points</name>');
+    pts.forEach(function(p){var c=co(p);if(c)o.push('<Placemark><name>'+X(p.name)+'</name><description>'+X('Z='+(isNaN(p.z)?'-':p.z.toFixed(3))+(p.code?' | '+p.code:'')+' | N='+p.n.toFixed(3)+' E='+p.e.toFixed(3))+'</description><styleUrl>#p</styleUrl><Point><coordinates>'+c+'</coordinates></Point></Placemark>')});
+    o.push('</Folder><Folder><name>Lines</name>');
+    lines.forEach(function(L,i){
+      var q=lpts(L).map(co).filter(Boolean);if(q.length<2)return;
+      if(L.closed)q.push(q[0]);
+      o.push('<Placemark><name>Line '+(i+1)+'</name><styleUrl>#l</styleUrl>'+(L.closed&&q.length>3?'<Polygon><outerBoundaryIs><LinearRing><coordinates>'+q.join(' ')+'</coordinates></LinearRing></outerBoundaryIs></Polygon>':'<LineString><tessellate>1</tessellate><coordinates>'+q.join(' ')+'</coordinates></LineString>')+'</Placemark>');
+    });
+    o.push('</Folder>');
+    if(tin){
+      var Lc=conts();o.push('<Folder><name>Contours</name>');
+      Object.keys(Lc).forEach(function(k){var m=Lc[k].map(function(sg){var a=co(sg[0]),b=co(sg[1]);return a&&b?'<LineString><coordinates>'+a+' '+b+'</coordinates></LineString>':''}).join('');
+        if(m)o.push('<Placemark><name>'+(+k).toFixed(2)+'</name><styleUrl>#c</styleUrl><MultiGeometry>'+m+'</MultiGeometry></Placemark>')});
+      o.push('</Folder>');
+    }
+    o.push('</Document></kml>');
+    if(bad>pts.length){info.textContent='تعذر تحويل الإحداثيات لـ Lat/Lon. راجع نظام الإحداثيات';return null}
+    return o.join('\n')}
+  function geojson(){
+    var F=[];
+    pts.forEach(function(p){var g=ll(p);if(g)F.push({type:'Feature',properties:{name:p.name,elevation:isNaN(p.z)?null:p.z,code:p.code},geometry:{type:'Point',coordinates:[g[0],g[1],isNaN(p.z)?0:p.z]}})});
+    lines.forEach(function(L){
+      var c=lpts(L).map(function(q){var g=ll(q);return g&&[g[0],g[1]]}).filter(Boolean);
+      if(L.closed)c.push(c[0]);if(c.length>1)F.push({type:'Feature',properties:{},geometry:{type:L.closed?'Polygon':'LineString',coordinates:L.closed?[c]:c}});
+    });
+    return JSON.stringify({type:'FeatureCollection',features:F});
+  }
+  document.querySelectorAll('[data-x]').forEach(function(b){b.onclick=function(){
+    var x=b.dataset.x;
+    if(x==='csv')save(fname+'.csv',csv(false));
+    if(x==='txt')save(fname+'.txt',pts.map(function(p){return [p.name,f(p.n,3),f(p.e,3),f(p.z,3),p.code].join(' ')}).join('\r\n'));
+    if(x==='dxfzip')save(fname+'_dxf.zip',zip(fname+'.dxf',dxf()));
+    if(x==='dxf')save(fname+'_dxf.txt',dxf());
+    if(x==='png'||x==='jpg')snap(x==='png'?'image/png':'image/jpeg').then(function(bl){save(fname+'.'+x,bl)}).catch(function(){info.textContent='تعذر تصدير الصورة'});
+    if(x==='pdf')snap('image/jpeg').then(function(bl){return bl.arrayBuffer()}).then(function(ab){save(fname+'.pdf',pdfN([{jpg:new Uint8Array(ab),w:cv.width,h:cv.height}]))}).catch(function(){info.textContent='تعذر تصدير PDF'});
+    if(x==='kmz'){var K=pts.length&&kml();if(K)save(fname+'_kmz.zip',zip('doc.kml',K))}
+    if(x==='geojson')save(fname+'.json',geojson());
+  }});
+  $('csvll').onclick=function(){save(fname+'_latlon.csv',csv(true))};
+  function target(){
+    if(sel)return sel;
+    return {e:view.cx,n:view.cy,name:'مركز الشاشة'};
+  }
+  $('geo').onclick=function(){
+    var p=target(),g=ll(p);
+    info.textContent=g?p.name+': Lat '+g[1].toFixed(6)+' , Lon '+g[0].toFixed(6):'نظام الإحداثيات غلط أو مش مكتمل';
+  };
+  $('gmap').onclick=function(){
+    var g=ll(target());if(!g){info.textContent='نظام الإحداثيات غلط أو مش مكتمل';return}
+    var q=g[1].toFixed(6)+','+g[0].toFixed(6),u='https://www.google.com/maps/search/?api=1&query='+q;
+    info.innerHTML='<a href="'+u+'" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">اضغط هنا لفتح Google Maps ↗</a> &nbsp; <span dir="ltr">'+q+'</span>';
+    try{navigator.clipboard.writeText(q)}catch(x){}
+  };
+
+  // ---- edit / analysis ----
+  var emode='',drag=null,hist=[],segA=null,csv2='',nm2='';
+  var THS={c3d:{css:'#1f2630',grid:'#2c3541',ink:'#e6edf5',mut:'#8d9aab',sb:'#1f2630',lc:'#ffd24d'},cad:{css:'#000',grid:'#1b1b1b',ink:'#fff',mut:'#8a8a8a',sb:'#000',lc:'#00ffff'},gray:{css:'#33373b',grid:'#44494e',ink:'#f1f1f1',mut:'#9a9fa5',sb:'#33373b',lc:'#7fd4ff'},navy:{css:'radial-gradient(circle at 50% 40%,#0a2f6b 0%,#031a44 60%,#021233 100%)',grid:'#0f3475',ink:'#eef3fb',mut:'#9db3d6',sb:'#021a44',lc:'#7fd4ff'},white:{css:'#fff',grid:'#dde3ec',ink:'#111',mut:'#667',sb:'#fff',lc:'#0a4fd0'}};
+  function setBg(){TH=THS[$('bg').value];wrap.style.background=TH.css;$('lc').value=TH.lc;draw()}
+  $('bg').onchange=setBg;
+  function world(x,y){var w=cv.width/dpr,h=cv.height/dpr;return {e:view.cx+(x-w/2)/view.s,n:view.cy-(y-h/2)/view.s}}
+  function hit(x,y,R){var b=null,bd=R||26;pts.forEach(function(p,i){var s=toScr(p),d=Math.hypot(s[0]-x,s[1]-y);if(d<bd){bd=d;b={p:p,i:i}}});return b}
+  function snapE(){hist.push({p:pts.map(function(p){return Object.assign({},p)}),l:lines.map(function(L){return Object.assign({},L,{ids:L.ids&&L.ids.slice()})})});if(hist.length>15)hist.shift()}
+  function rebuild(){if(tin)$('tinb').onclick();else draw()}
+  function rmPt(i){lines.slice().forEach(function(L){if(!L.ids)return;L.ids=L.ids.filter(function(k){return k!==i}).map(function(k){return k>i?k-1:k});if(L.ids.length<2)lines.splice(lines.indexOf(L),1)});
+    if(sel===pts[i])sel=null;pts.splice(i,1);cur=null;rebuild();selUi();info.textContent='اتحذفت النقطة. المتبقي '+pts.length}
+  function zAt(e,n){if(!tin||tin.T.length>30000)return null;var P=tin.P,T=tin.T;for(var i=0;i<T.length;i++){var a=P[T[i][0]],b=P[T[i][1]],c=P[T[i][2]],d=(b.n-c.n)*(a.e-c.e)+(c.e-b.e)*(a.n-c.n);if(!d)continue;var u=((b.n-c.n)*(e-c.e)+(c.e-b.e)*(n-c.n))/d,v=((c.n-a.n)*(e-c.e)+(a.e-c.e)*(n-c.n))/d;if(u>=0&&v>=0&&1-u-v>=0)return u*a.z+v*b.z+(1-u-v)*c.z}return null}
+  function addPt(x,y){var q=world(x,y),z=$('nz').value!==''?+$('nz').value:zAt(q.e,q.n),nm=$('nn').value,mx=0;
+    if(!nm){pts.forEach(function(p){var v=parseInt(p.name,10);if(v>mx&&String(v)===p.name)mx=v});nm=String(mx+1)}
+    snapE();pts.push({type:'TP',name:nm,e:q.e,n:q.n,z:z==null?NaN:z,code:$('ncd').value});sel=pts[pts.length-1];$('nn').value='';selUi();rebuild();info.textContent='أُضيفت نقطة '+nm+' (عدّل E/N/Z من \"النقطة المختارة\")'}
+  function delTri(x,y){if(!tin){info.textContent='أنشئ TIN الأول';return}var q=world(x,y),P=tin.P;
+    for(var i=0;i<tin.T.length;i++){var t=tin.T[i],a=P[t[0]],b=P[t[1]],c=P[t[2]],d=(b.n-c.n)*(a.e-c.e)+(c.e-b.e)*(a.n-c.n),u=((b.n-c.n)*(q.e-c.e)+(c.e-b.e)*(q.n-c.n))/d,v=((c.n-a.n)*(q.e-c.e)+(a.e-c.e)*(q.n-c.n))/d;
+      if(u>=0&&v>=0&&u+v<=1){tin.T.splice(i,1);tin.cs=null;info.textContent='اتحذف المثلث. المتبقي '+tin.T.length;draw();return}}}
+  function delSeg(a,b){lines.slice().forEach(function(L){if(!L.ids)return;var n=L.ids.length;
+    for(var i=0;i<(L.closed?n:n-1);i++){var x=L.ids[i],y=L.ids[(i+1)%n];if((x===a&&y===b)||(x===b&&y===a)){
+      if(L.closed){L.ids=L.ids.slice(i+1).concat(L.ids.slice(0,i+1));L.closed=false}
+      else{var A=L.ids.slice(0,i+1),B=L.ids.slice(i+1);L.ids=A;if(B.length>1)lines.push({ids:B,closed:false});if(A.length<2)lines.splice(lines.indexOf(L),1)}
+      return}}})}
+  function segTap(i){if(segA===null){segA=i;info.textContent='النقطة الأولى '+pts[i].name+' — اضغط النقطة المجاورة';return}snapE();delSeg(segA,i);segA=null;info.textContent='اتحذف الضلع';draw()}
+  function setMode(m){emode=m;segA=null;if(m){manual=false;$('manual').classList.remove('on');mmode=false;$('meas').classList.remove('on');cur=null}
+    document.querySelectorAll('[data-m]').forEach(function(b){b.classList.toggle('on',b.dataset.m===m)});
+    var H={move:'اسحب أي نقطة لتحريكها',add:'اضغط مكان فاضي لإضافة نقطة',del:'اضغط نقطة لحذفها',seg:'اضغط نقطتين متجاورتين على الخط لحذف الضلع',tri:'اضغط داخل مثلث لحذفه (محتاج TIN)'};if(H[m])info.textContent=H[m];draw()}
+  document.querySelectorAll('[data-m]').forEach(function(b){b.onclick=function(){setMode(emode===b.dataset.m?'':b.dataset.m)}});
+  $('eline').onclick=function(){$('manual').click();setTab('draw')};
+  function selUi(){var p=sel||{};$('edn').value=p.name||'';$('ede').value=p.e==null?'':p.e.toFixed(3);$('edN').value=p.n==null?'':p.n.toFixed(3);$('edz').value=p.z==null||isNaN(p.z)?'':p.z.toFixed(3);$('edc').value=p.code||''}
+  $('eapp').onclick=function(){if(!sel)return;snapE();sel.name=$('edn').value;sel.code=$('edc').value;var e=parseFloat($('ede').value),n=parseFloat($('edN').value);if(!isNaN(e))sel.e=e;if(!isNaN(n))sel.n=n;sel.z=parseFloat($('edz').value);rebuild()};
+  $('edel').onclick=function(){var i=pts.indexOf(sel);if(i<0)return;snapE();rmPt(i)};
+  $('eundo').onclick=function(){var h=hist.pop();if(!h){info.textContent='مفيش حاجة للتراجع';return}pts=h.p;lines=h.l;sel=null;cur=null;selUi();rebuild()};
+  cv.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect(),q=world(e.clientX-r.left,e.clientY-r.top),z=zAt(q.e,q.n);$('xy').textContent='E '+q.e.toFixed(3)+'   N '+q.n.toFixed(3)+(z==null?'':'   Z '+z.toFixed(3))});
+  function showTable(t,h,rows,nm){$('t2').textContent=t;nm2=nm;csv2='\uFEFF'+[h].concat(rows).map(function(r){return r.join(',')}).join('\r\n');
+    $('b2').innerHTML='<table id="tb"><tr>'+h.map(function(x){return '<th>'+x+'</th>'}).join('')+'</tr>'+rows.map(function(r){return '<tr>'+r.map(function(x){return '<td>'+x+'</td>'}).join('')+'</tr>'}).join('')+'</table>';$('dlg2').hidden=false}
+  $('c2').onclick=function(){save(nm2,csv2)};$('x2').onclick=function(){$('dlg2').hidden=true};
+  function ptTable(){var h='<table id="tb"><tr><th>#</th><th>PT</th><th>E</th><th>N</th><th>Z</th><th>DESC</th><th></th></tr>';
+    pts.slice(0,2000).forEach(function(p,i){h+='<tr><td data-z="'+i+'">'+(i+1)+'</td>'+['name','e','n','z','code'].map(function(k){var v=p[k];return '<td><input data-i="'+i+'" data-k="'+k+'" value="'+(typeof v==='number'?(isNaN(v)?'':v.toFixed(3)):String(v).replace(/"/g,'&quot;'))+'"></td>'}).join('')+'<td><button data-d="'+i+'">✕</button></td></tr>'});
+    $('t2').textContent='جدول النقاط ('+pts.length+(pts.length>2000?' — أول 2000':'')+')';$('b2').innerHTML=h+'</table>';csv2='\uFEFF'+csv(false);nm2=fname+'_points.csv';$('dlg2').hidden=false}
+  $('ptb').onclick=function(){if(!pts.length){info.textContent='ارفع ملف الأول';return}ptTable()};
+  $('b2').addEventListener('change',function(e){var t=e.target;if(!t.dataset.i)return;snapE();var p=pts[+t.dataset.i],k=t.dataset.k,v=t.value;if(k==='name'||k==='code')p[k]=v;else p[k]=v===''?NaN:parseFloat(v);rebuild();csv2='\uFEFF'+csv(false)});
+  $('b2').addEventListener('click',function(e){var t=e.target;
+    if(t.dataset.d!==undefined){snapE();rmPt(+t.dataset.d);ptTable()}
+    else if(t.dataset.z!==undefined){var p=pts[+t.dataset.z];sel=p;selUi();view.cx=p.e;view.cy=p.n;$('dlg2').hidden=true;draw()}});
+  $('hl').onclick=function(){var P=pts.filter(function(p){return p.type!=='KI'&&!isNaN(p.z)}).sort(function(a,b){return b.z-a.z});if(!P.length){info.textContent='مفيش مناسيب';return}
+    var f=function(w,p){return [w,p.name,p.e.toFixed(3),p.n.toFixed(3),p.z.toFixed(3)]},rows=P.slice(0,10).map(function(p){return f('أعلى',p)}).concat(P.slice(-10).reverse().map(function(p){return f('أقل',p)}));
+    showTable('أعلى وأقل النقاط',['','PT','E','N','Z'],rows,fname+'_hilo.csv')};
+  function needTin(){if(!tin){$('rep').textContent='أنشئ السطح (TIN) الأول';return 0}return 1}
+  function clipZ(t,lo,hi){var P=tin.P,V=t.map(function(i){return [P[i].e,P[i].n,P[i].z]});
+    function cl(poly,ge,lv){var o=[];for(var k=0;k<poly.length;k++){var a=poly[k],b=poly[(k+1)%poly.length],ia=ge?a[2]>=lv:a[2]<=lv,ib=ge?b[2]>=lv:b[2]<=lv;
+      if(ia)o.push(a);if(ia!==ib){var u=(lv-a[2])/(b[2]-a[2]);o.push([a[0]+u*(b[0]-a[0]),a[1]+u*(b[1]-a[1]),lv])}}return o}
+    var q=cl(cl(V,1,lo),0,hi),A=0;for(var k=0;k<q.length;k++){var a=q[k],b=q[(k+1)%q.length];A+=a[0]*b[1]-b[0]*a[1]}return Math.abs(A)/2}
+  $('bnd').onclick=function(){if(!needTin())return;var st=+$('bs').value||0.5,z0=Math.floor(tin.zmin/st)*st,B=[],tot=0,j;
+    if((tin.zmax-z0)/st>300){$('rep').textContent='الفاصل صغير جدًا (أكتر من 300 باند)';return}
+    for(j=0;z0+j*st<tin.zmax;j++){var a=0,lo=z0+j*st;tin.T.forEach(function(t){a+=clipZ(t,lo,lo+st)});B.push([lo,a]);tot+=a}
+    var cum=0,rows=B.map(function(b){cum+=b[1];return [b[0].toFixed(2),(b[0]+st).toFixed(2),b[1].toFixed(1),(b[1]/tot*100).toFixed(1)+'%',(cum/tot*100).toFixed(1)+'%']});
+    rows.push(['الإجمالي','',tot.toFixed(1),'100%','']);showTable('تحليل باندات الارتفاع (فاصل '+st+' م)',['من','إلى','المساحة م²','%','تراكمي %'],rows,fname+'_bands.csv')};
+  $('slp').onclick=function(){if(!needTin())return;var C=[0,2,5,10,20,1/0],A=[0,0,0,0,0],P=tin.P,tot=0;
+    tin.T.forEach(function(t){var a=P[t[0]],b=P[t[1]],c=P[t[2]],ux=b.e-a.e,uy=b.n-a.n,uz=b.z-a.z,vx=c.e-a.e,vy=c.n-a.n,vz=c.z-a.z,cz=ux*vy-uy*vx;if(!cz)return;
+      var s=Math.hypot(uy*vz-uz*vy,uz*vx-ux*vz)/Math.abs(cz)*100,ar=Math.abs(cz)/2,k=0;while(s>=C[k+1])k++;A[k]+=ar;tot+=ar});
+    showTable('تحليل الميول',['الميل %','المساحة م²','%'],A.map(function(a,k){return [C[k]+(C[k+1]<1/0?' – '+C[k+1]:' +'),a.toFixed(1),(a/tot*100).toFixed(1)+'%']}),fname+'_slopes.csv')};
+  $('vtab').onclick=function(){if(!needTin())return;var st=+$('bs').value||0.5,rows=[];
+    for(var r=Math.ceil(tin.zmin/st)*st;r<=tin.zmax+1e-9&&rows.length<300;r+=st){var c=0,f=0;tin.T.forEach(function(t){c+=vp(t,r,1);f+=vp(t,r,-1)});rows.push([r.toFixed(3),c.toFixed(1),f.toFixed(1),(c-f).toFixed(1)])}
+    showTable('حفر وردم عند مناسيب مختلفة',['المنسوب','حفر م³','ردم م³','الصافي م³'],rows,fname+'_cutfill.csv')};
+  var cx={x:-1,y:-1,s:null},cxq=0;
+  function crossDraw(w,h){if(cx.x<0)return;var L=+$('cxs').value/100,x=cx.s?toScr(cx.s)[0]:cx.x,y=cx.s?toScr(cx.s)[1]:cx.y,hw=w*L/2,hh=h*L/2,pb=6;
+    ctx.save();ctx.strokeStyle=TH.ink;ctx.globalAlpha=.9;ctx.lineWidth=1;ctx.setLineDash([]);ctx.beginPath();
+    ctx.moveTo(x-hw,y);ctx.lineTo(x+hw,y);ctx.moveTo(x,y-hh);ctx.lineTo(x,y+hh);ctx.rect(x-pb,y-pb,2*pb,2*pb);ctx.stroke();
+    if(cx.s){ctx.strokeStyle='#ffd24d';ctx.lineWidth=2;ctx.strokeRect(x-10,y-10,20,20);ctx.fillStyle='#ffd24d';ctx.font='11px system-ui';ctx.textAlign='left';ctx.fillText(cx.s.name,x+13,y-13)}ctx.restore()}
+  cv.addEventListener('pointermove',function(e){if(e.pointerType==='touch')return;cv.style.cursor='none';var r=cv.getBoundingClientRect();cx.x=e.clientX-r.left;cx.y=e.clientY-r.top;
+    var h=$('snp').checked?hit(cx.x,cx.y,14):null;cx.s=h?h.p:null;
+    if(cx.s)$('xy').textContent='⌖ '+cx.s.name+'   E '+cx.s.e.toFixed(3)+'   N '+cx.s.n.toFixed(3)+(isNaN(cx.s.z)?'':'   Z '+cx.s.z.toFixed(3));
+    if(!cxq){cxq=1;requestAnimationFrame(function(){cxq=0;draw()})}});
+  cv.addEventListener('pointerleave',function(){cx.x=-1;draw()});
+  $('cxs').addEventListener('input',draw);
+  function swapEN(){snapE();pts.forEach(function(p){var x=p.e;p.e=p.n;p.n=x});lines.forEach(function(L){if(L.xy)L.xy.forEach(function(p){var x=p.e;p.e=p.n;p.n=x})});rebuild();fit();info.textContent='اتبدّلت E و N'}
+  $('swp').onclick=function(){if(pts.length)swapEN()};
+  $('sdrsw').onchange=function(){if(raw&&/\.sdr$/i.test(raw.name))load(raw.t,raw.name)};
+  $('dup').onclick=function(){var tol=0.01,m={},rows=[];pts.forEach(function(p){var k=Math.round(p.e/tol)+'_'+Math.round(p.n/tol);(m[k]=m[k]||[]).push(p)});
+    Object.keys(m).forEach(function(k){if(m[k].length>1)rows.push([m[k].map(function(p){return p.name}).join(' / '),m[k][0].e.toFixed(3),m[k][0].n.toFixed(3),m[k].length])});
+    if(!rows.length){info.textContent='مفيش نقاط مكررة (تسامح 1 سم)';return}showTable('نقاط مكررة (تسامح 1 سم)',['النقاط','E','N','العدد'],rows,fname+'_dups.csv')};
+  $('codes').onclick=function(){var m={};pts.forEach(function(p){var c=p.code||'(بدون كود)';m[c]=m[c]||{n:0,z:[]};m[c].n++;if(!isNaN(p.z))m[c].z.push(p.z)});
+    showTable('ملخص الأكواد',['الكود','العدد','أقل Z','أعلى Z'],Object.keys(m).sort().map(function(c){var z=m[c].z;return [c,m[c].n,z.length?Math.min.apply(0,z).toFixed(3):'',z.length?Math.max.apply(0,z).toFixed(3):'']}),fname+'_codes.csv')};
+  $('rnm').onclick=function(){if(!pts.length)return;snapE();var n=parseInt($('rn0').value,10)||1;pts.forEach(function(p){if(p.type!=='KI')p.name=String(n++)});rebuild();info.textContent='اتعاد ترقيم النقاط'};
+  $('shf').onclick=function(){if(!pts.length)return;snapE();var a=+$('sE').value||0,b=+$('sN').value||0,c=+$('sZ').value||0;pts.forEach(function(p){p.e+=a;p.n+=b;if(!isNaN(p.z))p.z+=c});lines.forEach(function(L){if(L.xy)L.xy.forEach(function(p){p.e+=a;p.n+=b})});rebuild();fit()};
+  $('cpy').onclick=function(){if(!sel){info.textContent='اختار نقطة الأول';return}var t=[sel.name,sel.n.toFixed(3),sel.e.toFixed(3),isNaN(sel.z)?'':sel.z.toFixed(3)].join('\t');try{navigator.clipboard.writeText(t)}catch(x){}info.textContent='اتنسخت: '+t};
+  $('go').onclick=function(){var m=$('goto').value.match(/-?\d+(\.\d+)?/g);if(!m||m.length<2)return;view.cx=+m[0];view.cy=+m[1];draw()};
+  document.addEventListener('keydown',function(e){var t=e.target.tagName;if(t==='INPUT'||t==='SELECT'||t==='TEXTAREA')return;
+    if(e.key==='Escape'){setMode('');manual=false;$('manual').classList.remove('on');cur=null;draw()}
+    else if(e.key==='Delete')$('edel').click();
+    else if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();$('eundo').click()}
+    else if(e.key.toLowerCase()==='f')fit()});
+  // ---- interaction ----
+  function zoomAt(x,y,k){
+    var w=cv.width/dpr,h=cv.height/dpr,e=view.cx+(x-w/2)/view.s,n=view.cy-(y-h/2)/view.s;
+    view.s*=k;view.cx=e-(x-w/2)/view.s;view.cy=n+(y-h/2)/view.s;draw();
+  }
+  $('fit').onclick=fit;
+  cv.addEventListener('wheel',function(e){e.preventDefault();var r=cv.getBoundingClientRect();zoomAt(e.clientX-r.left,e.clientY-r.top,e.deltaY<0?1.15:1/1.15)},{passive:false});
+  var ptrs={},moved=0,lastDist=0;
+  cv.addEventListener('pointerdown',function(e){cv.setPointerCapture(e.pointerId);ptrs[e.pointerId]={x:e.clientX,y:e.clientY};moved=0;lastDist=0;drag=null;
+    if(emode==='move'&&Object.keys(ptrs).length===1){var r=cv.getBoundingClientRect(),h=hit(e.clientX-r.left,e.clientY-r.top);if(h){snapE();drag=h.p;sel=h.p}}});
+  cv.addEventListener('pointermove',function(e){
+    var p=ptrs[e.pointerId];if(!p)return;
+    var ids=Object.keys(ptrs),r=cv.getBoundingClientRect();
+    if(ids.length===2){
+      var a=ptrs[ids[0]],b=ptrs[ids[1]];
+      if(e.pointerId==ids[0])a={x:e.clientX,y:e.clientY};else b={x:e.clientX,y:e.clientY};
+      var d=Math.hypot(a.x-b.x,a.y-b.y);
+      if(lastDist)zoomAt((a.x+b.x)/2-r.left,(a.y+b.y)/2-r.top,d/lastDist);
+      lastDist=d;moved=99;
+    }else if(drag){var q=world(e.clientX-r.left,e.clientY-r.top);drag.e=q.e;drag.n=q.n;moved=99;draw()}else{
+      var dx=e.clientX-p.x,dy=e.clientY-p.y;moved+=Math.abs(dx)+Math.abs(dy);
+      view.cx-=dx/view.s;view.cy+=dy/view.s;draw();
+    }
+    ptrs[e.pointerId]={x:e.clientX,y:e.clientY};
+  });
+  function up(e){
+    if(drag){drag=null;if(tin&&moved>5)$('tinb').onclick();selUi();delete ptrs[e.pointerId];lastDist=0;draw();return}
+    if(ptrs[e.pointerId]&&moved<6&&Object.keys(ptrs).length===1){
+      var r=cv.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top,best=null,bi=-1,bd=24;
+      pts.forEach(function(p,i){var s=toScr(p),d=Math.hypot(s[0]-x,s[1]-y);if(d<bd){bd=d;best=p;bi=i}});
+      if(emode==='tri')best=null;
+      if(best){
+        sel=best;selUi();
+        if(emode==='del'){snapE();rmPt(bi)}else if(emode==='seg'){segTap(bi)}else if(mmode){measTap(best)}else if(manual){
+          if(!cur){cur={ids:[],closed:false};lines.push(cur)}
+          if(cur.ids[cur.ids.length-1]!==bi)cur.ids.push(bi);
+          info.textContent='خط يدوي: '+cur.ids.length+' نقطة (آخر نقطة: '+best.name+') | '+meas(cur);
+        }else info.textContent='نقطة '+best.name+' | N '+best.n.toFixed(3)+' | E '+best.e.toFixed(3)+' | Z '+(isNaN(best.z)?'-':best.z.toFixed(3))+(best.code?' | '+best.code:'');
+      }else if(emode==='add'){addPt(x,y)}else if(emode==='tri'){delTri(x,y)}else if(!manual)sel=null;
+      draw();
+    }
+    delete ptrs[e.pointerId];lastDist=0;
+  }
+  cv.addEventListener('pointerup',up);cv.addEventListener('pointercancel',up);
+  window.addEventListener('resize',resize);if(window.ResizeObserver)new ResizeObserver(resize).observe(wrap);
+  var lg=document.querySelector('link[rel=apple-touch-icon]');$('logo').src=lg.href;var fv=document.createElement('link');fv.rel='icon';fv.href=lg.href;document.head.appendChild(fv);
+  if(window.matchMedia)window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',draw);
+  setBg();cv.style.cursor='crosshair';
+  $('pprev').onclick=function(){pvi=Math.max(0,pvi-1);pvSheet()};$('pnext').onclick=function(){pvi=Math.min(sPages(sOpts())-1,pvi+1);pvSheet()};
+  resize();
+})();
+</script>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}</script>
+</body>
+</html>
